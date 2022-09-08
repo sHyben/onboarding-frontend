@@ -1,25 +1,10 @@
-let clicks = 0;
-window.addEventListener("click",() => {
-    let bar1 = document.getElementById('progressBar1').ldBar
-    bar1.set(clicks)
-    let bar2 = document.getElementById('progressBar2').ldBar
-    bar2.set(clicks)
-    let bar3 = document.getElementById('progressBar3').ldBar
-    bar3.set(clicks)
-    let bar4 = document.getElementById('progressBar4').ldBar
-    bar4.set(clicks)
-    clicks += 10;
-})
-
 let currentPage = 1
-let numberOfPages = 4
+let numberOfPages = 6
 let progressMove = 100 / numberOfPages
 addEventListener('load', (event) => {
-    let bar5 = document.getElementById('progressBar5').ldBar
-    bar5.set(progressMove * currentPage)
+    let progressBar = document.getElementById('progressBar').ldBar
+    progressBar.set(progressMove * currentPage)
 });
-
-
 
 $(document).ready(function () {
     var timeStart = 0;
@@ -36,8 +21,8 @@ $(document).ready(function () {
                 if(currentPage > 1) currentPage--
                 prevSlide();
             }
-            let bar5 = document.getElementById('progressBar5').ldBar
-            bar5.set(progressMove * currentPage)
+            let progressBar = document.getElementById('progressBar').ldBar
+            progressBar.set(progressMove * currentPage)
         }
         timeStart = timeStop;
     }
@@ -85,7 +70,7 @@ $(document).ready(function () {
         }
     }
     function dragStart(e) {
-        e.preventDefault();
+        //e.preventDefault();
         if (e.type == "touchstart") {
             $(document).off("mousedown", dragStart);
             startPoint = e.originalEvent.touches[0].pageY;
@@ -149,7 +134,53 @@ $(document).ready(function () {
         }, 800);
     }
     $(document).on("wheel", wheely);
-    $(document).on("keydown", hotkeys);
-    $(document).on("touchstart mousedown", dragStart);
-    $(document).on("touchend mouseup", dragEnd);
+    //$(document).on("keydown", hotkeys);
+/*    $(document).on("touchstart mousedown", dragStart);
+    $(document).on("touchend mouseup", dragEnd);*/
+    $(document).on("touchstart", dragStart);
+    $(document).on("touchend", dragEnd);
 });
+
+function moveDown() {
+    if ($(".active").is(":last-child")) {
+        if (!$(".slider").hasClass("dragging")) {
+            $(".slide:last-child").addClass("bounce");
+            setTimeout(function () {
+                $(".slide:last-child").removeClass("bounce");
+            }, 300);
+        }
+    } else {
+        $(".active")
+            .removeClass("active")
+            .addClass("prev")
+            .next()
+            .removeClass("queue")
+            .addClass("active");
+    }
+}
+
+function moveUp() {
+    if ($(".active").is(":first-child")) {
+        if (!$(".slider").hasClass("dragging")) {
+            $(".slide:first-child").addClass("bounce");
+            setTimeout(function () {
+                $(".slide:first-child").removeClass("bounce");
+            }, 300);
+        }
+    } else {
+        $(".active")
+            .removeClass("active")
+            .addClass("queue")
+            .prev()
+            .removeClass("prev")
+            .addClass("active");
+    }
+}
+
+function simulateScrollDown(value) {
+    for(let i = 0; i < value; i++) moveDown();
+}
+
+function simulateScrollUp(value) {
+    for(let i = 0; i < value; i++) moveUp();
+}

@@ -70,8 +70,8 @@ body,
 }
 
 .contentWrapper {
-    width: 80%;
-    height: 80%;
+    width: 80vw;
+    height: 80vh;
     margin: 10vh auto 0;
     z-index: 10;
     background: rgba(64, 64, 64, 0.5);
