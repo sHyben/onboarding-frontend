@@ -40,6 +40,7 @@ body,
 .prev .bg {
     opacity: 0.5;
 }
+/*
 .bounce {
     transition: 300ms;
 }
@@ -48,7 +49,7 @@ body,
 }
 .slide:last-child.bounce {
     transform: translate3d(0,-10%,0);
-}
+}*/
 /* End of pages animation */
 
 h1 {
@@ -64,6 +65,7 @@ h1 {
     z-index: 10;
     background-color: white;
     border-radius: 1vh;
+    padding-top: 5vh;
 }
 
 .customBold {
@@ -82,13 +84,16 @@ h1 {
 }
 
 .customBold.small {
-    font-size: 1vw;
+    font-size: 1.1vw;
     color: #00497B;
 }
 
 /* 1st page - welcome */
 #welcomeHeader {
     text-align: left;
+}
+.welcomeHead {
+    margin-bottom: 4vh;
 }
 #edLogo {
     max-width: 80%;
@@ -124,11 +129,12 @@ h1 {
 .registerButton.redirect {
     width: 8vw;
     height: 2.5vw;
+    margin-left: 0.5vw;
 }
 
 #youtubeFrame {
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 40%;
 }
 /* 4th page - gallery */
 #gallerySlideWrapper, #programContentWrapper, #programContent2Wrapper {
