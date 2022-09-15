@@ -1,56 +1,32 @@
 html,
 body,
-.slider,
 .slide,
 .bg {
     margin: 0;
     width: 100%;
     height: 100%;
-    overflow: hidden;
     font-family: 'Open Sans';
     font-size: 1vw;
+    scroll-behavior: smooth;
 }
 
-/* Pages animation */
-.slider {
-    background: #000;
-}
-.slide {
-    background: white;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate3d(0,0,0);
-    transition: 800ms;
-}
-.bg {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    transition: 800ms;
+/* Anchors */
+a.anchor {
+    display: block;
+    position: relative;
+    top: -17vh;
+    visibility: hidden;
 }
 
-/* Transitions */
-.queue {
-    transform: translate3d(0, 100%, 0);
+#program, #faqAnchor {
+    top: -23.5vh;
 }
-.prev {
-    transform: translate3d(0,-50%,0);
+
+#register {
+    top: -55vh;
 }
-.prev .bg {
-    opacity: 0.5;
-}
-/*
-.bounce {
-    transition: 300ms;
-}
-.slide:first-child.bounce {
-    transform: translate3d(0,10%,0);
-}
-.slide:last-child.bounce {
-    transform: translate3d(0,-10%,0);
-}*/
-/* End of pages animation */
+/* End of anchors */
+
 nav {
     height: 8vh;
     background-color: #e6f5fd;
@@ -118,7 +94,6 @@ h1 {
     width: 100%;
     height: 90vh;
     border-radius: 1vh;
-
 }
 
 #teamCheckWrapper {
@@ -128,7 +103,7 @@ h1 {
 /* 2nd page - why */
 
 /* 3rd page - register */
-#nameInput, #emailInput, #yearInput,
+#nameInput, #emailInput, #phoneNumberInput, #teamNameInput,
 .contentWrapper.topic {
     background-color: #e6f5fd;
 }
@@ -146,6 +121,10 @@ h1 {
     width: 8vw;
     height: 2.5vw;
     margin-left: 0.5vw;
+}
+
+#teamNameInputWrapper {
+    display: none;
 }
 
 #youtubeFrame {

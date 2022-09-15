@@ -23,8 +23,20 @@
 </head>
 <body>
 
-<nav class="navbar fixed-top navbar-light bg-light">
-    <a class="navbar-brand" href="#">Fixed top</a>
+<nav class="navbar fixed-top">
+    <div id="navbarImg">
+        <img id="navBarLogo" src="public/images/hackathon/EdAndTukeLogo.png" alt="ErsteDigitalAndTukeLogo">
+    </div>
+    <div id="navbarLinks">
+        <a class="navbar-brand" href="#">Prečo sa zúčastniť</a>
+        <a class="navbar-brand" href="#">Podmienky</a>
+        <a class="navbar-brand" href="#">Program</a>
+        <a class="navbar-brand" href="#">Spôsob hodnotenia</a>
+        <a class="navbar-brand" href="#">Témy zadaní</a>
+        <a class="navbar-brand" href="#">Niečo o nás</a>
+        <a class="navbar-brand" href="#">FAQ</a>
+        <button onclick="simulateScrollDown(2)" class="registerButton redirect btn btn-warning">Zaregistrovať</button>
+    </div>
 </nav>
 <div class="slider">
     <div id="welcomeSlide" class="slide active">
@@ -416,7 +428,7 @@
                 <div class="col d-flex justify-content-center align-items-center">
                     <img class="topicImg" src="public/images/hackathon/arTopicImg.png" alt="AR topic">
                 </div>
-                <div class="col">
+                <div class="topicText col">
                     <h2 class="customBold medium">Augmented Reality v Bankovníctve</h2>
                     <p>
                         Rozšírená realita si už našla miesto v každodennom živote a väčšina z nás ju už
@@ -438,7 +450,7 @@
     <div id="topic2Slide" class="slide queue">
         <div class="bg">
             <div class="contentWrapper topic row g-0 justify-content-center">
-                <div class="col">
+                <div class=" topicText col">
                     <h2 class="customBold medium">Metaverse a Blockchain</h2>
                     <p>
                         Otrepané? Možno, ale hľadáme správne použitie. Máš voľnú ruku navrhnúť riešenie
@@ -465,7 +477,7 @@
                 <div class="col d-flex justify-content-center align-items-center">
                     <img class="topicImg" src="public/images/hackathon/enviroTopicImg.png" alt="AR topic">
                 </div>
-                <div class="col">
+                <div class="topicText col">
                     <h2 class="customBold medium">Augmented Reality v Bankovníctve</h2>
                     <p>
                         Životné prostredie a sociálny systém zdieľame spoločný. Vždy sme boli banková skupina,
@@ -544,13 +556,13 @@
                 <div class="accordion" id="faq">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                                 <code class="customBold small">Čo musím vedieť?</code>
                             </button>
                         </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                             data-bs-parent="#accordionExample">
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                             data-bs-parent="#faq">
                             <div class="accordion-body">
                                 Je fajn vedieť napísať kúsok kódu, ale stačí aj ak máš v hlave upratané, prípadne vieš
                                 odkomunikovať riešenie, či spraviť jeho grafickú časť. Ideálne kuk odporúčanú skladbu tímu.
@@ -565,7 +577,7 @@
                             </button>
                         </h2>
                         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                             data-bs-parent="#accordionExample">
+                             data-bs-parent="#faq">
                             <div class="accordion-body">
                                 21.-22.10., Košice (Letná 9), TUKE, Hackathon, 24 hodín nonstop. Lebo je to super.
                                 Aj vyhrať, aj sa naučiť, aj zabaviť. Erste Digital a TUKE spolu.
@@ -580,7 +592,7 @@
                             </button>
                         </h2>
                         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                             data-bs-parent="#accordionExample">
+                             data-bs-parent="#faq">
                             <div class="accordion-body">
                                 Každého nadšenca, ideálne študenta akejkoľvek vysokej školy. Vysoká škola života sa tiež
                                 počíta, ale zváž relevantnosť svojej účasti, ak je VŠŽ v hre ;)
@@ -595,7 +607,7 @@
                             </button>
                         </h2>
                         <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                             data-bs-parent="#accordionExample">
+                             data-bs-parent="#faq">
                             <div class="accordion-body">
                                 Dostaneš welcome darček (niečo drobné), môžeš vyhrať skutočne hodnotné ceny za rôzne
                                 ad-hoc súťaže, ako tím súťažíš o cash (sme banka – na účet ;)) 1 000, 500 a 300 Eur,
@@ -613,7 +625,7 @@
                             </button>
                         </h2>
                         <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
-                             data-bs-parent="#accordionExample">
+                             data-bs-parent="#faq">
                             <div class="accordion-body">
                                 V skratke prídeš, zabavíš sa, naješ, niečo vymyslíš, vyhráš a s cenami odchádzaš.
                                 Trošku detailnejšie tu.
@@ -628,7 +640,7 @@
                             </button>
                         </h2>
                         <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
-                             data-bs-parent="#accordionExample">
+                             data-bs-parent="#faq">
                             <div class="accordion-body">
                                 Lebo ste super a my tiež, kuk sem.
                             </div>
@@ -642,7 +654,7 @@
                             </button>
                         </h2>
                         <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
-                             data-bs-parent="#accordionExample">
+                             data-bs-parent="#faq">
                             <div class="accordion-body">
                                 Kuk google maps a zadaj Letná 9. Alebo klikaj tu. Ale poctivý študent túto odpoveď hádam
                                 nečíta :)
@@ -657,7 +669,7 @@
                             </button>
                         </h2>
                         <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
-                             data-bs-parent="#accordionExample">
+                             data-bs-parent="#faq">
                             <div class="accordion-body">
                                 Áno, celý čas. Pitie non stop. Možno sa nám podarí aj nealko bar. Jedlo bude po celý čas
                                 k dispozícii, reálne 6 rôznych chodov.
@@ -672,7 +684,7 @@
                             </button>
                         </h2>
                         <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
-                             data-bs-parent="#accordionExample">
+                             data-bs-parent="#faq">
                             <div class="accordion-body">
                                 Zo skúseností vieme, že väčšina ľudí sa zabaví natoľko, že nespia vôbec. Tých pár,
                                 čo spať potrebujú (a je to tak správne), budú mať možnosť nejakej tichej miestnosti
