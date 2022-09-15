@@ -16,7 +16,7 @@ var whyWaypoint = new Waypoint({
         if(direction === "up") {
             $('#whyNav').css('color', 'black');
         } else {
-            $('#whyNav').css('color', '#ff7900');
+            $('#whyNav').css('color', '#00497B');
         }
     },
     offset: window.innerHeight*0.17
@@ -27,9 +27,9 @@ var teamWaypoint = new Waypoint({
     handler: function(direction) {
         $('.navbar-brand').css('color', 'black');
         if(direction === "up") {
-            $('#whyNav').css('color', '#ff7900');
+            $('#whyNav').css('color', '#00497B');
         } else {
-            $('#teamNav').css('color', '#ff7900');
+            $('#teamNav').css('color', '#00497B');
         }
     },
     offset: window.innerHeight*0.17
@@ -40,9 +40,9 @@ var requirementsWaypoint = new Waypoint({
     handler: function(direction) {
         $('.navbar-brand').css('color', 'black');
         if(direction === "up") {
-            $('#teamNav').css('color', '#ff7900');
+            $('#teamNav').css('color', '#00497B');
         } else {
-            $('#requirementsNav').css('color', '#ff7900');
+            $('#requirementsNav').css('color', '#00497B');
         }
     },
     offset: window.innerHeight*0.17
@@ -53,9 +53,9 @@ var programWaypoint = new Waypoint({
     handler: function(direction) {
         $('.navbar-brand').css('color', 'black');
         if(direction === "up") {
-            $('#requirementsNav').css('color', '#ff7900');
+            $('#requirementsNav').css('color', '#00497B');
         } else {
-            $('#programNav').css('color', '#ff7900');
+            $('#programNav').css('color', '#00497B');
         }
     },
     offset: window.innerHeight*0.17
@@ -66,9 +66,9 @@ var evaluationWaypoint = new Waypoint({
     handler: function(direction) {
         $('.navbar-brand').css('color', 'black');
         if(direction === "up") {
-            $('#programNav').css('color', '#ff7900');
+            $('#programNav').css('color', '#00497B');
         } else {
-            $('#evaluationNav').css('color', '#ff7900');
+            $('#evaluationNav').css('color', '#00497B');
         }
     },
     offset: window.innerHeight*0.17
@@ -79,9 +79,9 @@ var topicWaypoint = new Waypoint({
     handler: function(direction) {
         $('.navbar-brand').css('color', 'black');
         if(direction === "up") {
-            $('#evaluationNav').css('color', '#ff7900');
+            $('#evaluationNav').css('color', '#00497B');
         } else {
-            $('#topicNav').css('color', '#ff7900');
+            $('#topicNav').css('color', '#00497B');
         }
     },
     offset: window.innerHeight*0.17
@@ -92,9 +92,9 @@ var aboutWaypoint = new Waypoint({
     handler: function(direction) {
         $('.navbar-brand').css('color', 'black');
         if(direction === "up") {
-            $('#topicNav').css('color', '#ff7900');
+            $('#topicNav').css('color', '#00497B');
         } else {
-            $('#aboutNav').css('color', '#ff7900');
+            $('#aboutNav').css('color', '#00497B');
         }
     },
     offset: window.innerHeight*0.17
@@ -105,9 +105,9 @@ var faqWaypoint = new Waypoint({
     handler: function(direction) {
         $('.navbar-brand').css('color', 'black');
         if(direction === "up") {
-            $('#aboutNav').css('color', '#ff7900');
+            $('#aboutNav').css('color', '#00497B');
         } else {
-            $('#faqNav').css('color', '#ff7900');
+            $('#faqNav').css('color', '#00497B');
         }
     },
     offset: window.innerHeight*0.17
