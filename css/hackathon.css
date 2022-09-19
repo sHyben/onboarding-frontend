@@ -22,12 +22,16 @@ a.anchor {
 }
 
 #register {
-    top: -35vh;
+    top: -20vh;
 }
 
 #gallery {
     top: -15vh;
 }
+#home {
+    top: -50vh;
+}
+
 /* End of anchors */
 
 /* Navbar */
@@ -36,38 +40,44 @@ nav {
     background-color: #e6f5fd;
     font-size: 2vh;
 }
-#navbarLogoWrapper {
+#navbarFirstRowWrapper {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#navbarLogoWrapper {
+    width: 80vw;
+    height: 50%;
+    max-height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     /*border-bottom: 1px solid black;*/
     /*box-shadow: 2px 24px 10px -24px black;*/
 }
 
-#lineDiv {
-    margin: 0 auto 0;
-    width: 80vw;
-    border-bottom: 1px solid black;
-}
-
 #navbarHacText {
-    font-size: 2vw;
+    font-size: 1.5vw;
 }
 
 #navBarLogo {
-    max-height: 10vw;
+    max-height: 70%;
     height: 100%;
     width: 50%;
-    padding-right: 2vw;
+    padding-right: 4vw;
 }
 
 #navbarLinks {
     margin: 0 auto 0;
     width: 80vw;
     text-align: center;
-    border-top: 1px solid black;
+    border-top: 1px solid #C3C3C3;
+    padding-top: 1vh;
 }
 
 .navbar-brand {
-    font-size: 2vh;
+    font-size: 1vw;
     font-weight: bold;
 }
 
@@ -88,6 +98,7 @@ h1 {
 }
 
 .customBold {
+    font-family: 'Open Sans';
     font-weight: bold;
 }
 
@@ -102,6 +113,10 @@ h1 {
 .customBold.medium {
     font-size: 2vw;
     color: #00497B;
+}
+
+.customBold.medium.time {
+    font-size: 1.5vw;
 }
 
 .customBold.small {
@@ -127,6 +142,7 @@ h1 {
 
 .logoImg {
     width: 100%;
+    max-width: 100%;
     height: 84vh;
     border-radius: 1vh;
 }
@@ -136,16 +152,37 @@ h1 {
 }
 
 /* 2nd page - why */
+#whySlide {
+    height: 90vh;
+}
+#carouselExampleIndicators {
+    height: 100%;
+    width: 100%;
+}
 
+.carousel-control-next {
+    padding-left: 10%;
+}
+.carousel-control-prev {
+    padding-right: 10%;
+}
+
+#carouselWrapper {
+    width: 80%;
+    margin: 0 auto 0;
+}
 /* 3rd page - register */
+.customBold.small.register {
+    color: #ff7900;
+}
+
 #registrationSlide {
-    height: 70vh;
+    height: 90vh;
 }
 
 #formContentWrapper, #formWrapper, #videoWrapper{
     height: 100%;
 }
-
 
 #nameInput, #emailInput, #phoneNumberInput, #teamNameInput,
 .contentWrapper.topic {
@@ -155,8 +192,8 @@ h1 {
 .registerButton {
     background-color: #ff7900;
     color: white;
-    font-size: 1vw;
-    width: 10vw;
+    font-size: 0.8vw;
+    width: 8vw;
     height: 2.5vw;
 }
 
@@ -173,13 +210,17 @@ h1 {
 }
 
 #youtubeFrame {
-    width: 80%;
-    height: 50%;
+    width: 100%;
+    height: 70%;
 }
 
 /* 4th page - gallery */
 #gallerySlideWrapper, #programContentWrapper, #programContent2Wrapper {
     background-color: #e7f5fd;
+}
+.gallery-item {
+    width: 200px;
+    padding: 5px;
 }
 /* Carousel */
 .customCarousel {
@@ -237,16 +278,53 @@ h1 {
 /* End of carousel */
 
 /* 5th page - skills */
-#skillHeaderWrapper {
-    height: auto;
+#skillSlide {
+    height: 65%;
+}
+
+#skillContentWrapper {
+    height: 100%;
+}
+
+.skillImgWrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1vw;
 }
 
 .skillsImg {
-    width: 100%;
-    max-height: 100%;
+    height: 13vw;
+    max-width: 100%;
 }
 
 /* 6th page - requirements */
+#requirementsSlide {
+    height: 65%;
+}
+
+#requirementsContentWrapper {
+    height: 100%;
+}
+#reqTable td {
+    padding: 1vw;
+}
+
+#reqTable td:first-child {
+    text-align: left;
+    width: 5vw;
+}
+
+#reqTable td:last-child {
+    vertical-align: middle;
+    width: 65vw;
+}
+
+#reqTableCol {
+    height: 4vw;
+    max-height: 4vw;
+    vertical-align: middle;
+}
+
 .reqCheckmarkImg {
     height: 4vw;
     width: auto;
@@ -255,11 +333,12 @@ h1 {
 .reqText {
     width: 75%;
     height: 6vw;
-    padding: 1.8vw 0;
+    vertical-align: middle;
 }
 
 /* 7,8th page - program 1,2 */
 .programHead {
+    font-family: 'Open Sans';
     font-weight: bold;
     color: black;
 }
@@ -282,7 +361,7 @@ h1 {
     text-align: center;
     width: 15vw;
 }
-table td:last-child {
+.programTable td:last-child {
     padding-left: 2vw;
 }
 
@@ -301,26 +380,48 @@ table td:last-child {
     max-height: 100%;
 }
 
-/* 10, 11, 12th page - topic 1,2,3 */
+/* 10th page - topics */
+#topicSlide {
+    height: 130vh;
+    margin-bottom: 5vh;
+}
 
+.topicWrapper {
+    background-color: #e6f5fd;
+    border-radius: 1vh;
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
 
 .topicImg {
-    height: 84vh;
-    max-width: 100%;
-    border-radius: 1vh;
+    height: 40vh;
+    width: 100%;
+    border-radius: 1vh 1vh 0 0;
+}
+
+.topicTextWrapper {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .topicText {
     padding: 5vw;
 }
 
-/* 13th page - about */
+/* 11th page - about */
 .aboutImg {
     width: 100%;
     max-height: 100%;
 }
 
-/* 14th page - faq */
+/* 12th page - organizers */
+#peopleSlide {
+    height: 70vh;
+}
+
+/* 13th page - faq */
 #faqContentWrapper {
     overflow-y: auto;
 }

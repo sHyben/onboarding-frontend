@@ -49,16 +49,16 @@ body,
 }
 
 .slide:nth-child(1) .bg {
-    background-image: url(public/images/1.webp);
+    background-image: url(../public/images/1.webp);
 }
 .slide:nth-child(2) .bg {
-    background-image: url(public/images/2.webp);
+    background-image: url(../public/images/2.webp);
 }
 .slide:nth-child(3) .bg {
-    background-image: url(public/images/3.webp);
+    background-image: url(../public/images/3.webp);
 }
 .slide:nth-child(4) .bg {
-    background-image: url(public/images/4.webp);
+    background-image: url(../public/images/4.webp);
 }
 
 #progressBarWrapper > * .ldBar-label {
