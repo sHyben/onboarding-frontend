@@ -156,7 +156,7 @@ h1 {
 
 /* 2nd page - why */
 #whySlide {
-    height: 90vh;
+    height: 80vh;
 }
 
 #carouselExampleIndicators {
@@ -178,12 +178,12 @@ h1 {
 }
 
 /* 3rd page - register */
-.customBold.small.register {
-    color: #ff7900;
+#registrationSlide {
+    height: 70vh;
 }
 
-#registrationSlide {
-    height: 90vh;
+.customBold.small.register {
+    color: #ff7900;
 }
 
 #formContentWrapper, #formWrapper, #videoWrapper{
@@ -217,71 +217,17 @@ h1 {
 }
 
 /* 4th page - gallery */
-#gallerySlideWrapper, #programContentWrapper, #programContent2Wrapper {
+#gallerySlide {
+    height: 80vh;
+}
+#programContentWrapper, #programContent2Wrapper {
     background-color: #e7f5fd;
 }
+
 .inline-gallery-container {
-    width: 700px;
-    height: 500px;
+    width: 60vw;
+    height: 50vh;
     position: relative;
-}
-
-.lightGallery-captions {
-h4 {
-    transform: translate3d(60px, 0, 0px);
-}
-p {
-    transform: translate3d(-60px, 0, 0px);
-}
-h4, p {
-    opacity: 0;
-}
-}
-
-.lg-current {
-.lightGallery-captions {
-h4, p {
-    transform: translate3d(0, 0, 0px);
-}
-h4, p {
-    opacity: 1;
-}
-}
-}
-
-.lg-slide-progress {
-.lightGallery-captions {
-h4 {
-    transform: translate3d(-60px, 0, 0px);
-}
-p {
-    transform: translate3d(60px, 0, 0px);
-}
-h4, p {
-    opacity: 0;
-}
-}
-}
-
-.lightGallery-captions {
-h4, p {
-    transition: transform 0.4s ease-in-out, opacity 0.4s ease-in;
-}
-}
-
-.lg-current {
-.lightGallery-captions {
-h4, p {
-    transition-delay: 500ms;
-}
-}
-&.lg-slide-progress {
-.lightGallery-captions {
-h4, p {
-    transition-delay: 0ms;
-}
-}
-}
 }
 
 /* 5th page - skills */
@@ -306,7 +252,7 @@ h4, p {
 
 /* 6th page - requirements */
 #requirementsSlide {
-    height: 65%;
+    height: 50vh;
 }
 
 #requirementsContentWrapper {
@@ -347,6 +293,9 @@ h4, p {
 }
 
 /* 7,8th page - program 1,2 */
+#programSlide2 {
+    height: 90vh;
+}
 .day {
     padding-left:10px;
 }
@@ -390,6 +339,10 @@ h4, p {
 }
 
 /* 9th page - evaluation */
+#evaluationSlide {
+    height: 85vh;
+}
+
 #evalImg {
     max-width: 100%;
 }
@@ -444,6 +397,10 @@ h4, p {
 }
 
 /* 11th page - about */
+#aboutSlide {
+    height: 85vh;
+}
+
 .aboutImg {
     width: 100%;
     max-height: 100%;
@@ -451,10 +408,10 @@ h4, p {
 
 /* 12th page - organizers */
 #peopleSlide {
-    height: 70vh;
+    height: 65vh;
 }
 
 /* 13th page - faq */
-#faqContentWrapper {
-    overflow-y: auto;
+#faq {
+    margin-bottom: 2vh;
 }
