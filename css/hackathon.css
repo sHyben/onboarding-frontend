@@ -159,11 +159,6 @@ h1 {
     height: 80vh;
 }
 
-#carouselExampleIndicators {
-    height: 100%;
-    width: 100%;
-}
-
 .carousel-control-next {
     padding-left: 10%;
 }
@@ -224,6 +219,10 @@ h1 {
     background-color: #e7f5fd;
 }
 
+#galleryText {
+    width: 50%;
+}
+
 .inline-gallery-container {
     width: 60vw;
     height: 50vh;
@@ -233,6 +232,10 @@ h1 {
 /* 5th page - skills */
 #skillSlide {
     height: 65%;
+}
+
+#skillSlide h1 {
+    padding-bottom: 4vw;
 }
 
 #skillContentWrapper {
@@ -314,10 +317,6 @@ h1 {
     font-size: 1.5vw;
 }
 
-#programHeadRow {
-    height: 10px;
-}
-
 .programTable {
     text-align: left;
     padding-bottom: 20px;
@@ -373,7 +372,7 @@ h1 {
 
 .topicTextWrapper {
     height: 70vh;
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -384,7 +383,7 @@ h1 {
 
 .column_big{
     align-self: center;
-    height:30vh;
+    height: 30vh;
 }
 
 .column_heading{
@@ -409,6 +408,10 @@ h1 {
 /* 12th page - organizers */
 #peopleSlide {
     height: 65vh;
+}
+
+#organizersText {
+    text-align: center;
 }
 
 /* 13th page - faq */

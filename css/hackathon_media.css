@@ -1,11 +1,389 @@
 /* Mobile */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
+    html,
+    body,
+    .slide {
+        font-size: 2vh;
+    }
+
+    /* Anchors */
+    a.anchor {
+        top: -23vh;
+    }
+
+    #program, #faqAnchor {
+        top: -23.5vh;
+    }
+
+    #register {
+        top: -20vh;
+    }
+
+    #gallery {
+        top: -15vh;
+    }
+
+    #home {
+        top: -50vh;
+    }
+    /* End of anchors */
+
+    /* Navbar */
+    nav {
+        height: 14vh;
+        font-size: 4vh;
+    }
+
+    #navbarLogoWrapper {
+        width: 80vw;
+        height: 50%;
+        max-height: 50%;
+    }
+
+    #navbarHacText {
+        font-size: 3vw;
+        margin-right: 1.5vw;
+    }
+
+    #navBarLogo {
+        max-height: 70%;
+        height: 100%;
+        width: 50%;
+        padding-right: 4vw;
+    }
+
+    #navbarLinks {
+        margin: 0 auto 0;
+        width: 80vw;
+        text-align: center;
+        border-top: 1px solid #C3C3C3;
+        padding-top: 1vh;
+    }
+
+    .navbar-brand {
+        font-size: 0.5vw;
+        font-weight: bold;
+    }
+
+    /* General */
+    h1 {
+        font-size: 3vh;
+    }
+
+    .contentWrapper {
+        width: 90vw;
+        height: 84vh;
+    }
+
+    .customBold.big {
+        font-size: 3vh;
+    }
+
+    .customBold.medium {
+        font-size: 2.5vh;
+    }
+
+    .customBold.medium.time {
+        font-size: 2vh;
+    }
+
+    .customBold.small {
+        font-size: 2vh;
+    }
+
+    /* 1st page - welcome */
+    #welcomeContentWrapper {
+        display: flex;
+        flex-flow: column;
+    }
+
+    #welcomeText {
+        order: 2;
+        width: 100%;
+
+    }
+    .welcomeHead {
+        width: 100%;
+    }
+
+    .hackathonLogoWrapper {
+        width: 100%;
+        order: 1;
+        margin-bottom: 2vh;
+    }
+
+    .logoImg {
+        height: 50vh;
+    }
+
+    /* 2nd page - why */
+    #whySlide {
+        height: 88vh;
+    }
+
+    .carousel-indicators {
+        display: none;
+    }
+
+    #carouselWrapper {
+        width: 100%;
+    }
+
+    /* 3rd page - register */
+    #registrationSlide {
+        height: 100vh;
+        margin-bottom: 5vh;
+    }
+
+    #formContentWrapper {
+        flex-flow: column;
+    }
+
+    .registerButton {
+        font-size: 1.5vh;
+        width: 14vh;
+        height: 4vh;
+    }
+
+    #teamNameInputWrapper {
+        display: none;
+    }
+
+    .videoWrapper {
+        width: 100%;
+    }
+
+    #youtubeFrame {
+        width: 100%;
+        height: 250px;
+    }
+
+    /* 4th page - gallery */
+    #gallerySlide {
+        height: 100vh;
+    }
+
+    #galleryText, #gallerySlideWrapper div, .container-sm {
+        width: 100%;
+    }
+
+    .inline-gallery-container {
+        width: 100%;
+        height: 60vh;
+    }
+
+    /* 5th page - skills */
+    #skillSlide {
+        height: 110vh;
+    }
+
+    #skillSlide h1 {
+        padding-bottom: 0.5vh;
+    }
+
+    #skillContentWrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #skillContentWrapper div {
+        width: 100%;
+    }
+
+    .skillsImg {
+        height: 25vw;
+    }
+
+    /* 6th page - requirements */
+    #requirementsSlide {
+        height: 50vh;
+    }
+
+    #requirementsContentWrapper {
+        height: 100%;
+    }
+
+    #reqTable td {
+        padding: 1vw 0vw 0vw 0vw;
+    }
+
+    #reqTable td:first-child {
+        width: 15vw;
+    }
+
+    #reqTable td:last-child {
+        width: 85vw;
+        padding-top: 15px;
+    }
+
+    #reqTableCol {
+        height: 4vw;
+        max-height: 4vw;
+    }
+
+    .reqCheckmarkImg {
+        height: 4vh;
+        width: auto;
+    }
+
+    .reqText {
+        width: 75%;
+        height: 6vw;
+    }
+
+    /* 7,8th page - program 1,2 */
+    #programSlide {
+        height: 130vh;
+        margin-bottom: 2vh;
+    }
+
+    #programSlide2 {
+        height: 110vh;
+    }
+
+    #programContentWrapper, #programContent2Wrapper {
+        height: 90%;
+    }
+
+    #programContent2Wrapper {
+        height: 95%;
+    }
+
+    .day {
+        padding-left: 10px;
+    }
+
+    .programHead.day {
+        font-size: 2.2vh;
+    }
+
+    .programHead.date {
+        font-size: 1.8vh;
+    }
+
+    .programTable td:first-child {
+        width: 15vw;
+    }
+
+    .programTable td:last-child {
+        padding-left: 1.5vh;
+    }
+
+    .programTable td {
+        padding-bottom: 2.5vw;
+        padding-top: 2.5vw;
+    }
+
+    /* 9th page - evaluation */
+    #evaluationSlide {
+        height: 125vh;
+    }
+
+    #evaluationJury {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2vh;
+    }
+
+    #evaluationText {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #evaluationText div {
+        width: 100%;
+    }
+
+    .evalImages {
+        height: 25vw;
+    }
+
+    /* 10th page - topics */
+    #topicSlide {
+        height: 340vh;
+        margin-bottom: 5vh;
+    }
+
+    #topicSlide {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #topicContentWrapper div {
+        width: 100%;
+        margin-bottom: 2vh;
+    }
+
+    .topicImg {
+        height: 38vh;
+    }
+
+    .topicTextWrapper {
+        height: 60vh;
+    }
+
+    .column {
+        height: auto;
+    }
+
+    .column_big{
+        align-self: center;
+        height: 30vh;
+    }
+
+    .column_heading{
+        height: 10vh;
+        padding-bottom: 10px;
+    }
+
+    .topicText {
+        padding: 5vw;
+    }
+
+    #lastColumn {
+        height: auto;
+    }
+
+    #lastColumn .topicTextWrapper {
+        height: 80vh;
+    }
+
+    #lastColumn .column_heading {
+        height: 1vh;
+    }
+
+    /* 11th page - about */
+    #aboutSlide {
+        height: 110vh;
+        margin-bottom: 2vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aboutImg {
+        width: 100%;
+        max-height: 100%;
+    }
+
+    /* 12th page - organizers */
+    #peopleSlide {
+        height: 105vh;
+    }
+
+    #organizersText {
+        text-align: left;
+    }
+    /* 13th page - faq */
 
 }
 
 /* Tablets */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-
+    html,
+    body,
+    .slide {
+        font-size: 1vw;
+    }
 }
 
 /* Small screens */
@@ -19,10 +397,27 @@
 
 /* Desktops */
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {
-
+    html,
+    body,
+    .slide {
+        font-size: 1vw;
+    }
 }
 
 /* Large screens */
-@media only screen and (min-width: 1201px) {
+@media only screen and (min-width: 1201px) and (max-width: 1920px) {
+    html,
+    body,
+    .slide {
+        font-size: 1vw;
+    }
+}
 
+/* Ultra wide */
+@media only screen and (min-width: 1921px) {
+    html,
+    body,
+    .slide {
+        font-size: 1vw;
+    }
 }

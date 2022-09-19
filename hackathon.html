@@ -81,7 +81,7 @@
 
 <div id="welcomeSlide" class="slide">
     <div id="welcomeContentWrapper" class="contentWrapper row justify-content-center">
-        <div class="col-7 bg-white d-flex align-items-center justify-content-center">
+        <div id="welcomeText" class="col-7 bg-white d-flex align-items-center justify-content-center">
             <div class="w-100 align-items-center justify-content-center">
                 <h1 class="welcomeHead" id="welcomeHeader">Erste Digital a Technická Univerzita Košice, pozývajú
                     <code class="customBold medium">Teba</code> na <code class="customBold big hackathon">HACKATHON!</code>
@@ -224,7 +224,7 @@
     <a class="anchor" id="gallery"></a>
     <div id="gallerySlideWrapper" class="contentWrapper">
         <div class="d-flex align-items-center justify-content-center">
-            <p class="w-50 text-center">
+            <p id="galleryText" class="text-center">
                 Takýchto Hackathonov sme už spravili 3 a s ďalšími pomáhali, takže kto nepríde one time,
                 ľutuje next time (#nohate), a teda naši účastníci neľutovali (za dobré promo sme zaplatili iba
                 tým šikovným :D) – no veď pozri galériu sám. Kto kódoval veľa, zabavil sa riadne, a kto kódoval
@@ -244,7 +244,7 @@
 </div>
 
 <div id="skillSlide" class="slide">
-    <h1 class="customBold big pb-5">Že asi nie pre Teba?<a class="anchor" id="team"></a></h1>
+    <h1 class="customBold big">Že asi nie pre Teba?<a class="anchor" id="team"></a></h1>
     <div id="skillContentWrapper" class="contentWrapper row justify-content-center">
         <div class="col-3 align-items-center">
             <div class="skillImgWrapper">
@@ -344,7 +344,7 @@
                     Budeme chcieť vedieť aký ste tím, čo idete robiť, a či niečo potrebujete od nás.</td>
             </tr>
             <tr>
-                <td><code class="customBold medium time">16:00 - 19:00</code></td>
+                <td><code class="customBold medium time">16:00-19:00</code></td>
                 <td>Brainstorming</td>
             </tr>
             <tr>
@@ -364,7 +364,7 @@
 <div id="programSlide2" class="slide">
     <div id="programContent2Wrapper" class="contentWrapper row justify-content-center align-items-center">
         <h2 class="day"><code class="programHead day"> SOBOTA</code><code class="programHead date">, 22. 10. 2022</code></h2>
-        <table class="programTable">
+        <table class="programTable row">
             <tr>
                 <td><code class="customBold medium time">00:01-7:00</code></td>
                 <td>V noci máte jedlo, pitie, hry, mentorov a nás všetkých pre zábavu, občas po ľuďoch strieľame
@@ -399,7 +399,7 @@
 
 <div id="evaluationSlide" class="slide">
     <div class="contentWrapper row justify-content-center">
-        <div class="row">
+        <div id="evaluationJury" class="row">
             <div class="col">
                 <h2 class="customBold medium">Porota bude v zložení:<a class="anchor" id="evaluation"></a></h2>
                 <ul>
@@ -414,7 +414,7 @@
                 <img id="evalImg" src="public/images/hackathon/EdAndTukeLogo.png" alt="ErsteDigitalAndTukeLogo">
             </div>
         </div>
-        <div class="row text-center">
+        <div id="evaluationText" class="row text-center">
             <h1 class="customBold big pb-4">Čo sa hodnotí</h1>
             <div class="col">
                 <div class="row h-50">
@@ -456,7 +456,7 @@
 
 <div id="topicSlide" class="slide">
     <h1 class="customBold big pb-4">Témy tohto ročníka:<a class="anchor" id="topic"></a></h1>
-    <div class="contentWrapper row justify-content-center themes">
+    <div id="topicContentWrapper" class="contentWrapper row justify-content-center">
         <div class="col-4">
             <div class="topicWrapper">
                 <div class="skillImgWrapper">
@@ -504,8 +504,8 @@
                 </div>
             </div>
         </div>
-        <div class="col-4">
-            <div class="topicWrapper">
+        <div  class="col-4">
+            <div id="lastColumn" class="topicWrapper">
                 <div class="skillImgWrapper">
                     <img class="topicImg" src="public/images/hackathon/enviroTopicImg.png" alt="topicIcon">
                 </div>
@@ -560,7 +560,7 @@
     <div class="contentWrapper">
         <div>
             <h2 class="customBold medium text-center">Organizátori</h2>
-            <p class="text-center">
+            <p id="organizersText">
                 <code class="customBold small">Veronika</code> = HR expert, preklepne polovicu našich nových zamestnancov <br>
                 <code class="customBold small">Matúš</code> = business analytik v inovačnom tíme<br>
                 <code class="customBold small">Sisa</code> = HR expert, preklepne druhú polovicu našich nových zamestnancov<br>
