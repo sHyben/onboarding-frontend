@@ -188,6 +188,7 @@
 
     #skillContentWrapper div {
         width: 100%;
+        margin-bottom: 2vh;
     }
 
     .skillsImg {
@@ -201,10 +202,6 @@
 
     #requirementsContentWrapper {
         height: 100%;
-    }
-
-    #reqTable td {
-        padding: 1vw 0vw 0vw 0vw;
     }
 
     #reqTable td:first-child {
@@ -238,7 +235,7 @@
     }
 
     #programSlide2 {
-        height: 110vh;
+        height: 115vh;
     }
 
     #programContentWrapper, #programContent2Wrapper {
@@ -262,7 +259,8 @@
     }
 
     .programTable td:first-child {
-        width: 15vw;
+        width: 5vw;
+        padding-right: 2vw;
     }
 
     .programTable td:last-child {
@@ -382,8 +380,370 @@
     html,
     body,
     .slide {
-        font-size: 1vw;
+        font-size: 2vh;
     }
+
+    /* Anchors */
+    a.anchor {
+        top: -23vh;
+    }
+
+    #program, #faqAnchor {
+        top: -23.5vh;
+    }
+
+    #register {
+        top: -20vh;
+    }
+
+    #gallery {
+        top: -15vh;
+    }
+
+    #home {
+        top: -50vh;
+    }
+    /* End of anchors */
+
+    /* Navbar */
+    nav {
+        height: 9vh;
+        font-size: 4vh;
+    }
+
+    #navbarLogoWrapper {
+        width: 80vw;
+        height: 70%;
+        max-height: 70%;
+    }
+
+    #navbarHacText {
+        font-size: 3vw;
+        margin-right: 1.5vw;
+    }
+
+    #navBarLogo {
+        max-height: 100%;
+        height: 100%;
+        width: 50%;
+        padding-right: 4vw;
+    }
+
+    #navbarLinks {
+        display: none;
+    }
+
+    /* General */
+    h1 {
+        font-size: 3vh;
+    }
+
+    .contentWrapper {
+        width: 90vw;
+        height: 84vh;
+    }
+
+    .customBold.big {
+        font-size: 3vh;
+    }
+
+    .customBold.medium {
+        font-size: 2.5vh;
+    }
+
+    .customBold.medium.time {
+        font-size: 2vh;
+    }
+
+    .customBold.small {
+        font-size: 2vh;
+    }
+
+    /* 1st page - welcome */
+    #welcomeSlide {
+        height: 95vh;
+    }
+    #welcomeContentWrapper {
+        display: flex;
+        flex-flow: column;
+        margin: 13vh auto 0;
+    }
+
+    #welcomeText {
+        order: 2;
+        width: 100%;
+
+    }
+    .welcomeHead {
+        width: 100%;
+    }
+
+    .hackathonLogoWrapper {
+        width: 100%;
+        order: 1;
+        margin-bottom: 2vh;
+    }
+
+    .logoImg {
+        height: 50vh;
+    }
+
+    /* 2nd page - why */
+    #whySlide {
+        height: 75vh;
+    }
+
+    .carousel-indicators {
+        display: none;
+    }
+
+    #carouselWrapper {
+        width: 100%;
+    }
+
+    /* 3rd page - register */
+    #registrationSlide {
+        height: 90vh;
+        margin-bottom: 5vh;
+    }
+
+    #formContentWrapper {
+        flex-flow: column;
+    }
+
+    .registerButton {
+        font-size: 1.5vh;
+        width: 14vh;
+        height: 4vh;
+    }
+
+    #teamNameInputWrapper {
+        display: none;
+    }
+
+    .videoWrapper {
+        width: 100%;
+    }
+
+    #youtubeFrame {
+        width: 100%;
+        height: 250px;
+    }
+
+    /* 4th page - gallery */
+    #gallerySlide {
+        height: 90vh;
+    }
+
+    #galleryText, #gallerySlideWrapper div, .container-sm {
+        width: 100%;
+    }
+
+    .inline-gallery-container {
+        width: 100%;
+        height: 60vh;
+    }
+
+    /* 5th page - skills */
+    #skillSlide {
+        height: 135vh;
+    }
+
+    #skillSlide h1 {
+        padding-bottom: 0.5vh;
+    }
+
+    #skillContentWrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #skillContentWrapper div {
+        width: 100%;
+        margin-bottom: 2vh;
+    }
+
+    .skillsImg {
+        height: 25vw;
+    }
+
+    /* 6th page - requirements */
+    #requirementsSlide {
+        height: 40vh;
+    }
+
+    #requirementsContentWrapper {
+        height: 100%;
+    }
+
+    #reqTable td:first-child {
+        width: 15vw;
+    }
+
+    #reqTable td:last-child {
+        width: 85vw;
+        padding-top: 15px;
+    }
+
+    #reqTableCol {
+        height: 4vw;
+        max-height: 4vw;
+    }
+
+    .reqCheckmarkImg {
+        height: 4vh;
+        width: auto;
+    }
+
+    .reqText {
+        width: 75%;
+        height: 6vw;
+    }
+
+    /* 7,8th page - program 1,2 */
+    #programSlide {
+        height: 100vh;
+        margin-bottom: 2vh;
+    }
+
+    #programSlide2 {
+        height: 95vh;
+    }
+
+    #programContentWrapper, #programContent2Wrapper {
+        height: 90%;
+    }
+
+    #programContent2Wrapper {
+        height: 95%;
+    }
+
+    .day {
+        padding-left: 10px;
+    }
+
+    .programHead.day {
+        font-size: 2.2vh;
+    }
+
+    .programHead.date {
+        font-size: 1.8vh;
+    }
+
+    .programTable td:first-child {
+        width: 5vw;
+        padding-right: 2vw;
+    }
+
+    .programTable td:last-child {
+        padding-left: 1.5vh;
+    }
+
+    .programTable td {
+        padding-bottom: 2.5vw;
+        padding-top: 2.5vw;
+    }
+
+    /* 9th page - evaluation */
+    #evaluationSlide {
+        height: 140vh;
+    }
+
+    #evaluationJury {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2vh;
+    }
+
+    #evaluationText {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #evaluationText div {
+        width: 100%;
+    }
+
+    .evalImages {
+        height: 25vw;
+    }
+
+    /* 10th page - topics */
+    #topicSlide {
+        height: 320vh;
+        margin-bottom: 5vh;
+    }
+
+    #topicSlide {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #topicContentWrapper div {
+        width: 100%;
+        margin-bottom: 2vh;
+    }
+
+    .topicImg {
+        height: 50vh;
+    }
+
+    .topicTextWrapper {
+        height: 45vh;
+    }
+
+    .column {
+        height: auto;
+    }
+
+    .column_big{
+        align-self: center;
+        height: 30vh;
+    }
+
+    .column_heading{
+        height: 10vh;
+        padding-bottom: 10px;
+    }
+
+    .topicText {
+        padding: 5vw;
+    }
+
+    #lastColumn {
+        height: auto;
+    }
+
+    #lastColumn .topicTextWrapper {
+        height: 55vh;
+    }
+
+    #lastColumn .column_heading {
+        height: 1vh;
+    }
+
+    /* 11th page - about */
+    #aboutSlide {
+        height: 90vh;
+        margin-bottom: 2vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aboutImg {
+        width: 100%;
+        max-height: 100%;
+    }
+
+    /* 12th page - organizers */
+    #peopleSlide {
+        height: 75vh;
+    }
+
+    #organizersText {
+        text-align: left;
+    }
+    /* 13th page - faq */
 }
 
 /* Small screens */
@@ -391,7 +751,422 @@
     html,
     body,
     .slide {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        font-family: 'Open Sans';
+        font-size: 1vw;
+        scroll-behavior: smooth;
+    }
+
+    /* Anchors */
+    a.anchor {
+        display: block;
+        position: relative;
+        top: -23vh;
+        visibility: hidden;
+    }
+
+    #program, #faqAnchor {
+        top: -23.5vh;
+    }
+
+    #register {
+        top: -20vh;
+    }
+
+    #gallery {
+        top: -15vh;
+    }
+
+    #home {
+        top: -50vh;
+    }
+    /* End of anchors */
+
+    /* Navbar */
+    nav {
+        height: 14vh;
+        background-color: #e6f5fd;
+        font-size: 2vh;
+    }
+
+    #navbarFirstRowWrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #navbarLogoWrapper {
+        width: 80vw;
+        height: 50%;
+        max-height: 50%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #navbarHacText {
         font-size: 1.5vw;
+        margin-right: 1.5vw;
+    }
+
+    #navBarLogo {
+        max-height: 70%;
+        height: 100%;
+        width: 50%;
+        padding-right: 4vw;
+    }
+
+    #navbarLinks {
+        margin: 0 auto 0;
+        width: 80vw;
+        text-align: center;
+        border-top: 1px solid #C3C3C3;
+        padding-top: 1vh;
+    }
+
+    .navbar-brand {
+        font-size: 1vw;
+        font-weight: bold;
+    }
+
+    /* General */
+    h1 {
+        text-align: center;
+        font-size: 2vw;
+        font-weight: bold;
+    }
+
+    .contentWrapper {
+        width: 80vw;
+        height: 84vh;
+        z-index: 10;
+        background-color: white;
+        border-radius: 1vh;
+        margin: 1vh auto 0;
+    }
+
+    .customBold {
+        font-family: 'Open Sans';
+        font-weight: bold;
+    }
+
+    .customBold.big {
+        font-size: 2.1vw;
+        color: #ff7900;
+    }
+    .customBold.big.hackathon {
+        font-family: 'Montserrat Alternates';
+    }
+
+    .customBold.medium {
+        font-size: 1.8vw;
+        color: #00497B;
+    }
+
+    .customBold.medium.time {
+        font-size: 1.5vw;
+    }
+
+    .customBold.small {
+        font-size: 1.2vw;
+        color: #00497B;
+    }
+
+    /* 1st page - welcome */
+    #welcomeContentWrapper {
+        margin: 15vh auto 0;
+    }
+
+    #welcomeHeader {
+        text-align: left;
+    }
+
+    .welcomeHead {
+        margin-bottom: 4vh;
+    }
+
+    #edLogo {
+        max-width: 80%;
+        max-height: 50%;
+    }
+
+    .logoImg {
+        width: 100%;
+        max-width: 100%;
+        height: 84vh;
+        border-radius: 1vh;
+    }
+
+    #teamCheckWrapper {
+        margin-top: 1vw;
+    }
+
+    /* 2nd page - why */
+    #whySlide {
+        height: 80vh;
+    }
+
+    .carousel-control-next {
+        padding-left: 10%;
+    }
+
+    .carousel-control-prev {
+        padding-right: 10%;
+    }
+
+    #carouselWrapper {
+        width: 80%;
+        margin: 0 auto 0;
+    }
+
+    /* 3rd page - register */
+    #registrationSlide {
+        height: 70vh;
+    }
+
+    .customBold.small.register {
+        color: #ff7900;
+    }
+
+    #formContentWrapper, #formWrapper, #videoWrapper{
+        height: 100%;
+    }
+
+    #nameInput, #emailInput, #phoneNumberInput, #teamNameInput,
+    .contentWrapper.topic {
+        background-color: #e6f5fd;
+    }
+
+    .registerButton {
+        background-color: #ff7900;
+        color: white;
+        font-size: 0.8vw;
+        width: 8vw;
+        height: 2.5vw;
+    }
+
+    .registerButton:hover {
+        background-color: rgba(255, 121, 0, 0.66);
+    }
+
+    #teamNameInputWrapper {
+        display: none;
+    }
+
+    #youtubeFrame {
+        width: 100%;
+        height: 70%;
+    }
+
+    /* 4th page - gallery */
+    #gallerySlide {
+        height: 80vh;
+    }
+    #programContentWrapper, #programContent2Wrapper {
+        background-color: #e7f5fd;
+    }
+
+    #galleryText {
+        width: 50%;
+    }
+
+    .inline-gallery-container {
+        width: 60vw;
+        height: 50vh;
+        position: relative;
+    }
+
+    /* 5th page - skills */
+    #skillSlide {
+        height: 65%;
+    }
+
+    #skillSlide h1 {
+        padding-bottom: 4vw;
+    }
+
+    #skillContentWrapper {
+        height: 100%;
+    }
+
+    .skillImgWrapper {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1vw;
+    }
+
+    .skillsImg {
+        height: 13vw;
+        max-width: 100%;
+    }
+
+    /* 6th page - requirements */
+    #requirementsSlide {
+        height: 50vh;
+    }
+
+    #requirementsContentWrapper {
+        height: 100%;
+    }
+
+    #reqTable td {
+        padding: 1vw 0vw 0vw 0vw;
+    }
+
+    #reqTable td:first-child {
+        text-align: left;
+        width: 4vw;
+    }
+
+    #reqTable td:last-child {
+        width: 65vw;
+        padding-top:45px;
+        margin:0;
+        padding-left:0;
+    }
+
+    #reqTableCol {
+        height: 4vw;
+        max-height: 4vw;
+        vertical-align: middle;
+    }
+
+    .reqCheckmarkImg {
+        height: 4vw;
+        width: auto;
+    }
+
+    .reqText {
+        width: 75%;
+        height: 6vw;
+        vertical-align: middle;
+    }
+
+    /* 7,8th page - program 1,2 */
+    #programSlide2 {
+        height: 90vh;
+    }
+    .day {
+        padding-left:10px;
+    }
+
+    .programHead {
+        font-family: 'Open Sans';
+        font-weight: bold;
+        color: black;
+    }
+
+    .programHead.day {
+        font-size: 2vw;
+    }
+
+    .programHead.date {
+        font-size: 1.5vw;
+    }
+
+    .programTable {
+        text-align: left;
+        padding-bottom: 20px;
+    }
+
+    .programTable td:first-child {
+        border-right: 0.5vw solid #00497b;
+        text-align: center;
+        width: 15vw;
+    }
+
+    .programTable td:last-child {
+        padding-left: 2vw;
+    }
+
+    .programTable td {
+        padding-bottom: 2.5vh;
+        padding-top: 2.5vh;
+    }
+
+    /* 9th page - evaluation */
+    #evaluationSlide {
+        height: 85vh;
+    }
+
+    #evalImg {
+        max-width: 100%;
+    }
+
+    .evalImages {
+        height: 14vw;
+        max-height: 100%;
+    }
+
+    /* 10th page - topics */
+    #topicSlide {
+        height: 130vh;
+        margin-bottom: 5vh;
+    }
+
+    .topicWrapper {
+        background-color: #e6f5fd;
+        border-radius: 1vh;
+        height: 100%;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    }
+
+    .topicImg {
+        height: 43vh;
+        width: 100%;
+        border-radius: 1vh 1vh 0 0;
+    }
+
+    .topicTextWrapper {
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .column{
+        height:25vh;
+    }
+
+    .column_big{
+        align-self: center;
+        height: 30vh;
+    }
+
+    .column_heading{
+        height: 10vh;
+        padding-bottom: 10px;
+    }
+
+    .topicText {
+        padding: 5vw;
+    }
+
+    /* 11th page - about */
+    #aboutSlide {
+        height: 85vh;
+    }
+
+    .aboutImg {
+        width: 100%;
+        max-height: 100%;
+    }
+
+    /* 12th page - organizers */
+    #peopleSlide {
+        height: 65vh;
+    }
+
+    #organizersText {
+        text-align: center;
+    }
+
+    /* 13th page - faq */
+    #faq {
+        margin-bottom: 2vh;
     }
 }
 
