@@ -37,7 +37,7 @@ a.anchor {
 /* Navbar */
 nav {
     height: 14vh;
-    background-color: #e6f5fd;
+    background-color: #BCE4FA;
     font-size: 2vh;
 }
 
@@ -126,6 +126,10 @@ h1 {
 }
 
 /* 1st page - welcome */
+#welcomeSlide {
+    height: 90vh;
+}
+
 #welcomeContentWrapper {
     margin: 15vh auto 0;
 }
@@ -156,7 +160,7 @@ h1 {
 
 /* 2nd page - why */
 #whySlide {
-    height: 80vh;
+    height: 85vh;
 }
 
 .carousel-control-next {
@@ -174,7 +178,7 @@ h1 {
 
 /* 3rd page - register */
 #registrationSlide {
-    height: 70vh;
+    height: 120vh;
 }
 
 .customBold.small.register {
@@ -182,7 +186,7 @@ h1 {
 }
 
 #formContentWrapper, #formWrapper, #videoWrapper{
-    height: 100%;
+    height: 78%;
 }
 
 #nameInput, #emailInput, #phoneNumberInput, #teamNameInput,
@@ -209,11 +213,30 @@ h1 {
 #youtubeFrame {
     width: 100%;
     height: 70%;
+    margin-bottom: 2vh;
+}
+
+#otherVideosWrapper {
+    height: 35vh;
+}
+
+#youtubeFrame2, #youtubeFrame3 {
+    margin-top: 5vh;
+    height: 98%;
+    width: 50%;
+}
+
+#youtubeFrame2 {
+    margin-right: 2vh;
+}
+
+.smallTextTerms {
+    font-size: 1vw;
 }
 
 /* 4th page - gallery */
 #gallerySlide {
-    height: 80vh;
+    height: 100vh;
 }
 #programContentWrapper, #programContent2Wrapper {
     background-color: #e7f5fd;
@@ -225,7 +248,7 @@ h1 {
 
 .inline-gallery-container {
     width: 60vw;
-    height: 50vh;
+    height: 70vh;
     position: relative;
 }
 
@@ -296,9 +319,19 @@ h1 {
 }
 
 /* 7,8th page - program 1,2 */
+#programSlide {
+    height: 100vh;
+    margin-bottom: 2vh;
+}
+
 #programSlide2 {
     height: 90vh;
 }
+
+#programContentWrapper {
+    height: 90%;
+}
+
 .day {
     padding-left:10px;
 }
@@ -339,7 +372,7 @@ h1 {
 
 /* 9th page - evaluation */
 #evaluationSlide {
-    height: 85vh;
+    height: 90vh;
 }
 
 #evalImg {
@@ -407,7 +440,7 @@ h1 {
 
 /* 12th page - organizers */
 #peopleSlide {
-    height: 65vh;
+    height: 70vh;
 }
 
 #organizersText {

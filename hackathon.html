@@ -89,7 +89,7 @@
                 </h1>
                 <h3 class="customBold medium">Kedy?</h3>
                 <p class="welcomeHead">
-                    Kukni teda kalendár, či máš 21. a 22. 10. čas a rovno sa
+                    Kukni teda kalendár, či máš 4. a 5. 11. čas a rovno sa
                     <a class="customBold small" onClick="window.location.href='#register';" style="cursor: pointer; cursor: hand;">
                         regni tu</a>.
                 </p>
@@ -188,8 +188,7 @@
                     <label for="phoneNumberInput">Telefónne číslo (dobrovoľné)</label>
                 </div>
                 <p>
-                    Telefónne číslo slúži výhradne na núdzové kontaktovanie účastníka (nedostavil sa bez zrušenia
-                    registrácie, ...) nie na marketingové účely.
+                    Telefónne číslo zadávaš iba pre prípad nesprávneho mailu, telefonicky nikoho kontaktovať neplánujeme.
                 </p>
                 <div id="teamCheckWrapper" class="mb-3 form-check">
                     <input type="checkbox" class="form-check-input" id="teamCheck">
@@ -201,16 +200,31 @@
                 </div>
                 <div class="mb-3 form-check">
                     <input type="checkbox" class="form-check-input" id="gdprCheck">
-                    <label class="form-check-label" for="gdprCheck">Súhlasím so spracovaním osobných údajov</label>
+                    <label class="form-check-label" for="gdprCheck">Súhlasím so spracovaním osobných údajov*</label>
                 </div>
 
                 <button id="formSubmitButton" type="submit" class="registerButton btn btn-warning">Zaregistrovať</button>
-                <p>hackathon@erstegroup.com</p>
-            </form>
+                </form>
         </div>
-
-        <div class="videoWrapper col-8  d-flex justify-content-center">
-            <iframe id="youtubeFrame" src="https://www.youtube.com/embed/1xjN2O104Fs"
+        <div class="videoWrapper col-8  d-flex flex-column">
+            <iframe id="youtubeFrame" src="https://www.youtube.com/embed/Jg4uyEAJZP8"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+            </iframe>
+            <p class="smallTextTerms">
+                * Odoslaním tejto registrácie súhlasím so spracovaním svojich osobných údajov (meno, email, tel. číslo)
+                za účelom organizácie podujatia Erste Hackathon 2022 do 5.11.2022. Pre odvolanie, kontaktuj
+                hackathon@erstegroup.com. Na podujatí bude potrebný ďalší súhlas so zverejnením fotografií a videa z akcie.
+            </p>
+        </div>
+        <div id="otherVideosWrapper" class="col-12 d-flex justify-content-center">
+            <iframe id="youtubeFrame2" src="https://www.youtube.com/embed/-BRr6huXu_A"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+            </iframe>
+            <iframe id="youtubeFrame3" src="https://www.youtube.com/embed/zeLLQBwmspA"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen>
@@ -315,7 +329,6 @@
             </tr>
         </table>
         <button onclick="window.location.href='#register';" class="registerButton redirect btn btn-warning mt-4">Zaregistrovať</button>
-
     </div>
 </div>
 
@@ -327,7 +340,7 @@
         <a class="anchor" id="program"></a>
     </h1>
     <div id="programContentWrapper" class="contentWrapper row justify-content-center align-items-center">
-        <h2 class="day"><code class="programHead day">PIATOK</code><code class="programHead date">, 21. 10. 2022</code></h2>
+        <h2 class="day"><code class="programHead day">PIATOK</code><code class="programHead date">, 04. 11. 2022</code></h2>
         <table class="programTable row">
             <tr>
                 <td><code class="customBold medium time">14:00</code></td>
@@ -353,6 +366,10 @@
                     zasekne a potrebuje zmeniť myšlienky.</td>
             </tr>
             <tr>
+                <td><code class="customBold medium time">19:30 - 23:59</code></td>
+                <td>Kódovanie, žhavenie hláv, aj klávesníc...</td>
+            </tr>
+            <tr>
                 <td><code class="customBold medium time">23:59</code></td>
                 <td>Bude ďalšie jedlo a spravíme aj pauzu, nech nám poviete, či to ide, ak nejde, ako vieme pomôcť,
                     budú mentori, hry, pitie a spravíme asi aj simple vedomostný kvíz (o ceny).</td>
@@ -363,7 +380,7 @@
 
 <div id="programSlide2" class="slide">
     <div id="programContent2Wrapper" class="contentWrapper row justify-content-center align-items-center">
-        <h2 class="day"><code class="programHead day"> SOBOTA</code><code class="programHead date">, 22. 10. 2022</code></h2>
+        <h2 class="day"><code class="programHead day"> SOBOTA</code><code class="programHead date">, 05. 11. 2022</code></h2>
         <table class="programTable row">
             <tr>
                 <td><code class="customBold medium time">00:01 - 7:00</code></td>
@@ -396,18 +413,18 @@
     </div>
 </div>
 
-
 <div id="evaluationSlide" class="slide">
     <div class="contentWrapper row justify-content-center">
         <div id="evaluationJury" class="row">
             <div class="col">
                 <h2 class="customBold medium">Porota bude v zložení:<a class="anchor" id="evaluation"></a></h2>
                 <ul>
-                    <li>Inovačný líder firmy (Erste Digital)</li>
-                    <li>Šéf katedry (TUKE)</li>
+                    <li>Inovačný špecialista (Erste Digital)</li>
+                    <li>Šéf predmetu (TUKE)</li>
                     <li>HR expert (Erste Digital)</li>
                     <li>Zástupca študentov (TUKE)</li>
                     <li>Programátor (Erste Digital)</li>
+                    <li>(ešte sa môže zmeniť)</li>
                 </ul>
             </div>
             <div class="col">
@@ -561,7 +578,7 @@
         <div>
             <h2 class="customBold medium text-center">Organizátori</h2>
             <p id="organizersText">
-                <code class="customBold small">Veronika</code> = HR expert, preklepne polovicu našich nových zamestnancov <br>
+                <code class="customBold small"><a class="customBold small" href="https://www.linkedin.com/in/veronika-%C5%A1tyr%C3%A1kov%C3%A1-68475212b/">Veronika</a></code> = HR expert, preklepne polovicu našich nových zamestnancov <br>
                 <code class="customBold small">Matúš</code> = business analytik v inovačnom tíme<br>
                 <code class="customBold small">Sisa</code> = HR expert, preklepne druhú polovicu našich nových zamestnancov<br>
                 <code class="customBold small">Šimon</code> = developer v inovačnom tíme, IT guru, brigádnik, spolutvorca aj tejto stránky<br>
@@ -576,6 +593,7 @@
                 a ďalší
             </p>
             <p class="text-center">Ak máš na nás alebo hackathon otázky, píš sem: <code class="customBold small">ErsteDigitalInnovations@erstegroup.com</code></p>
+            <p class="text-center">A ak máš radšej osobný kontakt, píš sem <code class="customBold small">Jan.Sehnal@erstegroup.com</code> alebo sem <code class="customBold small">MatusJozef.Bizon@erstegroup.com</code></p>
         </div>
     </div>
 </div>
