@@ -57,10 +57,29 @@
 
 <nav class="navbar fixed-top">
     <div id="navbarFirstRowWrapper">
-        <div id="navbarLogoWrapper" class="d-flex justify-content-between align-items-center">
+        <div id="navbarLogoWrapper">
             <img id="navBarLogo" src="public/images/hackathon/logoLine.svg" alt="ErsteDigitalAndTukeLogo">
-            <div class="d-flex">
+            <div id="logoText">
                 <code id="navbarHacText" class="customBold big hackathon">HACKATHON</code>
+                <div id="mobileMenu" class="dropdown">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        Úvod
+                    </a>
+
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Prečo sa zúčastniť</a></li>
+                        <li><a class="dropdown-item" id="homeNavM" href="#home">Úvod</a></li>
+                        <li><a class="dropdown-item" id="whyNavM" href="#why">Prečo sa zúčastniť</a></li>
+                        <li><a class="dropdown-item" id="teamNavM" href="#team">Tím</a></li>
+                        <li><a class="dropdown-item" id="requirementsNavM" href="#requirements">Podmienky</a></li>
+                        <li><a class="dropdown-item" id="programNavM" href="#program">Program</a></li>
+                        <li><a class="dropdown-item" id="evaluationNavM" href="#evaluation">Spôsob hodnotenia</a></li>
+                        <li><a class="dropdown-item" id="topicNavM" href="#topic">Témy zadaní</a></li>
+                        <li><a class="dropdown-item" id="aboutNavM" href="#about">Niečo o nás</a></li>
+                        <li><a class="dropdown-item" id="faqNavM" href="#faqAnchor">FAQ</a></li>
+                    </ul>
+                </div>
                 <button onclick="window.location.href='#register';" class="registerButton redirect btn btn-warning">Zaregistrovať</button>
             </div>
         </div>
@@ -147,7 +166,7 @@
                 Rozmýšľania dosť, kódovania trochu, prezentovania myšlienok tak akurát a za to dostaneš
                 nejaký ten <code class="customBold small">gadget -> garantované</code>, môžeš vyhrať pár
                 ďalších <code class="customBold small">darčekov</code> (dosť pravdepodobné) a navyše
-                <code class="customBold small">hráš v tímoch o 1000, 500 a 300 Eur</code>.
+                <code class="customBold small">hráš v tímoch o 2000, 1000 a 500 Eur</code>.
                 Okrem toho <code class="customBold small">zábava (a tým myslíme vážne zábava</code> -> kuk
                 <a class="customBold small" onClick="window.location.href='#register';" style="cursor: pointer; cursor: hand;">video</a>),
                 pitie a jedlo na úrovni. Vybavíme Ti zápočet a niečo sa aj naučíš. Spoznáš zaujímavých ľudí
@@ -199,7 +218,7 @@
                     <label for="teamNameInput">Názov tímu</label>
                 </div>
                 <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="gdprCheck">
+                    <input type="checkbox" class="form-check-input" id="gdprCheck" required>
                     <label class="form-check-label" for="gdprCheck">Súhlasím so spracovaním osobných údajov*</label>
                 </div>
 
@@ -259,6 +278,11 @@
 
 <div id="skillSlide" class="slide">
     <h1 class="customBold big">Že asi nie pre Teba?<a class="anchor" id="team"></a></h1>
+    <p id="skillText">
+        „Nech nás súdia druhí“ ako hovoria študenti pred skúškami. Ak chceš
+        prísť, mal by si mať niečo z tohto
+        <code class="customBold small">(tvoj dream team „cca 5 členov“):</code>
+    </p>
     <div id="skillContentWrapper" class="contentWrapper row justify-content-center">
         <div class="col-3 align-items-center">
             <div class="skillImgWrapper">
@@ -333,7 +357,7 @@
 </div>
 
 <div id="programSlide" class="slide">
-    <h1 class="customBold big pb-4">
+    <h1 class="customBold big pb-4 text-center">
         Bude to prebiehať asi takto (zas kuk
         <a class="customBold big" onClick="window.location.href='#register';" style="cursor: pointer; cursor: hand;">video</a> a
         <a class="customBold big" onClick="window.location.href='#gallery';" style="cursor: pointer; cursor: hand;">galérku</a>):
@@ -416,7 +440,7 @@
 <div id="evaluationSlide" class="slide">
     <div class="contentWrapper row justify-content-center">
         <div id="evaluationJury" class="row">
-            <div class="col">
+            <div class="juryCol col">
                 <h2 class="customBold medium">Porota bude v zložení:<a class="anchor" id="evaluation"></a></h2>
                 <ul>
                     <li>Inovačný špecialista (Erste Digital)</li>
@@ -427,8 +451,8 @@
                     <li>(ešte sa môže zmeniť)</li>
                 </ul>
             </div>
-            <div class="col">
-                <img id="evalImg" src="public/images/hackathon/EdAndTukeLogo.png" alt="ErsteDigitalAndTukeLogo">
+            <div class="juryCol col">
+                <img id="evalImg" src="public/images/hackathon/judges.png" alt="ErsteDigitalAndTukeLogo">
             </div>
         </div>
         <div id="evaluationText" class="row text-center">
@@ -474,7 +498,7 @@
 <div id="topicSlide" class="slide">
     <h1 class="customBold big pb-4">Témy tohto ročníka:<a class="anchor" id="topic"></a></h1>
     <div id="topicContentWrapper" class="contentWrapper row justify-content-center">
-        <div class="col-4">
+       <!-- <div class="col-4">
             <div class="topicWrapper">
                 <div class="skillImgWrapper">
                     <img class="topicImg" src="public/images/hackathon/arTopicImg.png" alt="topicIcon">
@@ -497,49 +521,49 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-4">
+        </div>-->
+        <div class="col-6">
             <div class="topicWrapper">
                 <div class="skillImgWrapper">
                     <img class="topicImg" src="public/images/hackathon/metaverseTopicImg.png" alt="topicIcon">
                 </div>
                 <div class="topicTextWrapper">
-                    <h2 class="customBold medium ps-3 pe-3 column_heading">Metaverse a Blockchain</h2>
+                    <h2 class="customBold medium ps-3 pe-3 column_heading">Smart Banka</h2>
                     <p class="ps-3 pe-3 pt-1 column_big ">
-                        Otrepané? Možno, ale hľadáme správne použitie. Máš voľnú ruku navrhnúť riešenie
-                        (prepojenie s bankovníctvom sa očakáva), ktoré nám úkáže novú perspektívu využitia
-                        týchto technológií.
+                        Bankovníctvo je tu s nami dlho, poďme ho spraviť modernejšie s využitím moderných technológií.
+                        Vašou úlohou bude navrhnúť spôsob, ako klientovi ponúknuť pridanú hodnotu (aj nad rámec bankovníctva)
+                        pomocou napr. IoT, Rozšírenej reality, Blockchain, VR, Metaverse, … Smart môžete byť aj v oblasti
+                        CO2 stopy, udržateľnosti atď.
                     </p>
                     <div class="column">
-                        <h3 class="customBold small ps-3 pe-3">Atribúty:</h3>
+                        <h3 class="customBold small ps-3 pe-3">Kritériá:</h3>
                         <ul>
-                            <li>prepojené s bankovníctvom</li>
-                            <li>použitie aspoň jedného: Metaverse a/alebo Blockchain</li>
-                            <li>sprav z toho appku (webapp/Android/iOS – vyber si)</li>
+                            <li>spojené s bankovníctvom</li>
+                            <li> použiť aspoň jednu technológiu</li>
+                            <li>vytvorte z toho aplikáciu (webapp/Android/iOS – záleží na vás)</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
-        <div  class="col-4">
+        <div  class="col-6">
             <div id="lastColumn" class="topicWrapper">
                 <div class="skillImgWrapper">
-                    <img class="topicImg" src="public/images/hackathon/enviroTopicImg.png" alt="topicIcon">
+                    <img class="topicImg" src="public/images/hackathon/smartUniTopicImg.png" alt="topicIcon">
                 </div>
                 <div class="topicTextWrapper">
-                    <h2 class="customBold medium ps-3 pe-3 column_heading">Banka a životné prostredie</h2>
+                    <h2 class="customBold medium ps-3 pe-3 column_heading">Smart University</h2>
                     <p class="ps-3 pe-3 pt-1 column_big">
-                        Životné prostredie a sociálny systém zdieľame spoločný. Vždy sme boli banková skupina,
-                        ktorá dávala prosperitu klienta na prvé miesto. Preto Ťa vyzývame, aby si nám navrhol riešenie,
-                        ako môže banka konať ešte viac zodpovedne. Napríklad ukázať a redukovať individuálnu stopu CO2
-                        klientov, fungovať plne digitálne a pod. (nehľadáme riešenia, ako efektívne prevádzkovať banku)
+                        Vy najlepšie viete, ako môže byť Univerzita inteligentná a dať vám viac. Alebo ako využiť
+                        inteligentné prvky, ktoré už na univerzite sú k dispozícii. Zvážte aj inteligentnú univerzitu v
+                        rámci inteligentného mesta. Čo môže byť iné?
                     </p>
                     <div class="column">
-                        <h3 class="customBold small ps-3 pe-3">Atribúty:</h3>
+                        <h3 class="customBold small ps-3 pe-3">Kritériá:</h3>
                         <ul>
-                            <li>navrhni konkrétnu enviro/social tému</li>
-                            <li>nájdi spôsob, ako v riešení využiť aj technológiu</li>
-                            <li>sprav z toho appku (webapp/Android/iOS – vyber si)</li>
+                            <li>použiť údaje so senzorov</li>
+                            <li>skúste to urobiť interaktívne</li>
+                            <li>vytvorte z toho aplikáciu (webapp/Android/iOS – záleží na vás)</li>
                         </ul>
                     </div>
                 </div>
@@ -549,9 +573,9 @@
 </div>
 
 <div id="aboutSlide" class="slide">
-    <div class="contentWrapper row justify-content-center">
+    <div class="contentWrapper justify-content-center">
         <h1 class="customBold big">Prečo to celé robíme?<a class="anchor" id="about"></a></h1>
-        <div class="row text-center">
+        <div class="text-center">
             <p>
                 <code class="customBold small">Lebo nás to baví</code> a chceme sa baviť so študentmi.
                 <code class="customBold small">Otvárame v Košiciach office</code> a toto je
@@ -567,16 +591,13 @@
                 a navyše robíme tento hackathon ;)
             </p>
         </div>
-        <div class="row h-50">
-            <img class="aboutImg" src="public/images/hackathon/enviroTopicImg.png" alt="AR topic">
-        </div>
     </div>
 </div>
 
 <div id="peopleSlide" class="slide">
     <div class="contentWrapper">
-        <div>
-            <h2 class="customBold medium text-center">Organizátori</h2>
+        <div id="organizersWrapper">
+<!--            <h2 class="customBold medium text-center">Organizátori</h2>
             <p id="organizersText">
                 <code class="customBold small"><a class="customBold small" href="https://www.linkedin.com/in/veronika-%C5%A1tyr%C3%A1kov%C3%A1-68475212b/">Veronika</a></code> = HR expert, preklepne polovicu našich nových zamestnancov <br>
                 <code class="customBold small">Matúš</code> = business analytik v inovačnom tíme<br>
@@ -591,16 +612,51 @@
                 <code class="customBold small">George guy 2</code> = koordinuje vývojárov George, ma na starosti integrácie<br>
                 <code class="customBold small">George guy 3</code> = George vývojár, rieši transakcie, ako vyzerajú, a tiež o človeku hovoria<br>
                 a ďalší
-            </p>
-            <p class="text-center">Ak máš na nás alebo hackathon otázky, píš sem: <code class="customBold small">ErsteDigitalInnovations@erstegroup.com</code></p>
-            <p class="text-center">A ak máš radšej osobný kontakt, píš sem <code class="customBold small">Jan.Sehnal@erstegroup.com</code> alebo sem <code class="customBold small">MatusJozef.Bizon@erstegroup.com</code></p>
+            </p>-->
+
+<!--            <div class="organizerBox">
+                <div class="organizerImgWrapper">
+                    <img class="organizerImg" src="public/images/hackathon/linkedInPhotos/Matus.png" alt="organizer">
+                </div>
+
+                <div class="organizerTextWrapper">
+                    <div>
+                        <p class="customBold medium">Matúš</p>
+                        <a href="https://www.linkedin.com/in/mat%C3%BA%C5%A1-bizo%C5%88-4912a8157/" target="_blank">
+                            <img class="linkedInLogo" src="public/images/hackathon/linkedInPhotos/linkedInLogo.png" alt="LinkedIn">
+                        </a>
+                    </div>
+                    <p><b>Business analytik</b></p>
+                    <p>business analytik v inovačnom tíme</p>
+                </div>
+            </div>-->
+            <a href=""><img class="organizerCard" src="public/images/hackathon/linkedInPhotos/Veronika.jpg" alt="Anna"></a>
+            <a href=""><img class="organizerCard" src="public/images/hackathon/linkedInPhotos/Matus.jpg" alt="Anna"></a>
+            <a href=""><img class="organizerCard" src="public/images/hackathon/linkedInPhotos/Sisa.jpg" alt="Anna"></a>
+            <a href=""><img class="organizerCard" src="public/images/hackathon/linkedInPhotos/Simon.jpg" alt="Anna"></a>
+            <a href=""><img class="organizerCard" src="public/images/hackathon/linkedInPhotos/Anna.jpg" alt="Anna"></a>
+            <a href=""><img class="organizerCard" src="public/images/hackathon/linkedInPhotos/Miso.jpg" alt="Anna"></a>
+            <a href=""><img class="organizerCard" src="public/images/hackathon/linkedInPhotos/Veronika2.jpg" alt="Anna"></a>
+            <a href=""><img class="organizerCard" src="public/images/hackathon/linkedInPhotos/Jano.jpg" alt="Anna"></a>
+            <a href=""><img class="organizerCard" src="public/images/hackathon/linkedInPhotos/Ivan.jpg" alt="Anna"></a>
+            <a href=""><img class="organizerCard" src="public/images/hackathon/linkedInPhotos/Vierka.jpg" alt="Anna"></a>
+            <a href=""><img class="organizerCard" src="public/images/hackathon/linkedInPhotos/George1.jpg" alt="Anna"></a>
+            <a href=""><img class="organizerCard" src="public/images/hackathon/linkedInPhotos/George2.jpg" alt="Anna"></a>
+            <a href=""><img class="organizerCard" src="public/images/hackathon/linkedInPhotos/George3.jpg" alt="Anna"></a>
+
         </div>
+        <p class="text-center">Ak máš na nás alebo hackathon otázky, píš sem: <code class="customBold small">ErsteDigitalInnovations@erstegroup.com</code></p>
+        <p class="text-center">A ak máš radšej osobný kontakt, píš sem <code class="customBold small">Jan.Sehnal@erstegroup.com</code> alebo sem <code class="customBold small">MatusJozef.Bizon@erstegroup.com</code></p>
+
     </div>
 </div>
 
 <div id="faqSlide" class="slide">
     <div id="faqContentWrapper" class="contentWrapper justify-content-center">
         <h1 class="customBold big pb-4">Niečo sme nezodpovedali alebo sme sa nepochopili?<a class="anchor" id="faqAnchor"></a></h1>
+        <div id="faqImgWrapper">
+            <img id="faqImg" src="public/images/hackathon/faqImg.png" alt="faqImg">
+        </div>
         <div class="accordion" id="faq">
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingOne">

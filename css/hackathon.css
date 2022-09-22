@@ -18,7 +18,7 @@ a.anchor {
 }
 
 #program, #faqAnchor {
-    top: -23.5vh;
+    top: -21vh;
 }
 
 #register {
@@ -37,7 +37,7 @@ a.anchor {
 /* Navbar */
 nav {
     height: 14vh;
-    background-color: #BCE4FA;
+    background-color: #DFF2FD;
     font-size: 2vh;
 }
 
@@ -57,9 +57,17 @@ nav {
     align-items: center;
 }
 
+#logoText {
+    display: flex;
+}
+
 #navbarHacText {
     font-size: 1.5vw;
     margin-right: 1.5vw;
+}
+
+#mobileMenu {
+    display: none;
 }
 
 #navBarLogo {
@@ -87,6 +95,8 @@ h1 {
     text-align: center;
     font-size: 2vw;
     font-weight: bold;
+    padding-left: 10vw;
+    padding-right: 10vw;
 }
 
 .contentWrapper {
@@ -136,6 +146,8 @@ h1 {
 
 #welcomeHeader {
     text-align: left;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .welcomeHead {
@@ -191,7 +203,7 @@ h1 {
 
 #nameInput, #emailInput, #phoneNumberInput, #teamNameInput,
 .contentWrapper.topic {
-    background-color: #e6f5fd;
+    background-color: #DFF2FD;
 }
 
 .registerButton {
@@ -254,11 +266,18 @@ h1 {
 
 /* 5th page - skills */
 #skillSlide {
-    height: 65%;
+    height: 75vh;
 }
 
 #skillSlide h1 {
-    padding-bottom: 4vw;
+    padding-bottom: 2vw;
+}
+
+#skillText {
+    text-align: center;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    margin-bottom: 4vw;
 }
 
 #skillContentWrapper {
@@ -375,8 +394,20 @@ h1 {
     height: 90vh;
 }
 
+#evaluationJury {
+    height: 35vh;
+}
+
+.juryCol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 #evalImg {
-    max-width: 100%;
+    width: 25vh;
+    max-height: 25vh;
 }
 
 .evalImages {
@@ -386,32 +417,32 @@ h1 {
 
 /* 10th page - topics */
 #topicSlide {
-    height: 130vh;
+    height: 125vh;
     margin-bottom: 5vh;
 }
 
 .topicWrapper {
-    background-color: #e6f5fd;
+    background-color: #DFF2FD;
     border-radius: 1vh;
     height: 100%;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .topicImg {
-    height: 43vh;
+    height: 60vh;
     width: 100%;
     border-radius: 1vh 1vh 0 0;
 }
 
 .topicTextWrapper {
-    height: 70vh;
+    height: 45vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .column{
-    height:25vh;
+    height: 25vh;
 }
 
 .column_big{
@@ -430,7 +461,7 @@ h1 {
 
 /* 11th page - about */
 #aboutSlide {
-    height: 85vh;
+    height: 35vh;
 }
 
 .aboutImg {
@@ -440,14 +471,71 @@ h1 {
 
 /* 12th page - organizers */
 #peopleSlide {
-    height: 70vh;
+    height: 235vh;
 }
 
-#organizersText {
+#organizersWrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2vh;
+    margin-bottom: 2vh;
+}
+/*
+
+.organizerBox {
+    background-color: #DFF2FD;
+    height: 50vh;
+    border-radius: 2vh;
+}
+
+.organizerImgWrapper {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.organizerImg {
+    width: 50%;
+    align-self: center;
+}
+
+.organizerTextWrapper {
     text-align: center;
+}
+
+.organizerTextWrapper div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.linkedInLogo {
+    max-height: 100%;
+}
+
+.organizerTextWrapper div p {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+*/
+
+.organizerCard {
+    width: 100%;
 }
 
 /* 13th page - faq */
 #faq {
+    margin-bottom: 2vh;
+}
+
+#faqImgWrapper {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
     margin-bottom: 2vh;
 }
