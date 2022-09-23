@@ -424,7 +424,7 @@
     }
     /* 13th page - faq */
     #faqSlide {
-        height: 105vh;
+        height: 145vh;
     }
 
     /* Footer */
@@ -928,7 +928,7 @@
 
     /* Navbar */
     #navbarHacText {
-        font-size: 2vw;
+        font-size: 2.5vw;
     }
 
     #navbarLinks {
@@ -1014,7 +1014,7 @@
 
     /* 3rd page - register */
     #registrationSlide {
-        height: 140vh;
+        height: 143vh;
     }
 
     #formContentWrapper, #formWrapper, #videoWrapper {
@@ -1023,7 +1023,7 @@
 
     .registerButton {
         font-size: 1.5vw;
-        width: 15vw;
+        width: 14vw;
         height: 4vw;
     }
 
@@ -1052,7 +1052,7 @@
 
     /* 5th page - skills */
     #skillSlide {
-        height: 65vh;
+        height: 75vh;
     }
 
     .skillsImg {
@@ -1061,7 +1061,7 @@
 
     /* 6th page - requirements */
     #requirementsSlide {
-        height: 60vh;
+        height: 55vh;
     }
 
     #reqTable td:first-child {
@@ -1120,20 +1120,20 @@
 
     /* 10th page - topics */
     #topicSlide {
-        height: 165vh;
+        height: 130vh;
         margin-bottom: 5vh;
     }
 
     .topicWrapper {
-        height: 150vh;
+        height: 115vh;
     }
 
     .topicImg {
-        height: 38vh;
+        height: 50vh;
     }
 
     .topicTextWrapper {
-        height: 100vh;
+        height: 60vh;
     }
 
     .column {
@@ -1155,20 +1155,28 @@
 
     /* 11th page - about */
     #aboutSlide {
-        height: 85vh;
-    }
-
-    .aboutImg {
-        width: 100%;
-        max-height: 100%;
+        height: 45vh;
     }
 
     /* 12th page - organizers */
     #peopleSlide {
-        height: 75vh;
+        height: 320vh;
+    }
+
+    #organizersWrapper {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2vh;
+        margin-bottom: 3vh;
     }
 
     /* 13th page - faq */
+    #faqSlide {
+        height: 130vh;
+    }
+
+    #footer {
+        height: 15vh;
+    }
 }
 
 /* Desktops */

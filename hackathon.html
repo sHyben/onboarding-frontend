@@ -68,12 +68,6 @@
                     </label>
 
                     <ul class="menu__box">
-                        <li>
-                            <input type="checkbox" id="hacky-input">
-                            <label for="hacky-input">
-                                <a class="menu__item" id="homeNavM2" href="#home">Úvod</a>
-                            </label>
-                        </li>
                         <li><a class="menu__item" id="homeNavM" href="#home">Úvod</a></li>
                         <li><a class="menu__item" id="whyNavM" href="#why">Prečo sa zúčastniť</a></li>
                         <li><a class="menu__item" id="teamNavM" href="#team">Tím</a></li>
@@ -84,7 +78,7 @@
                         <li><a class="menu__item" id="aboutNavM" href="#about">Niečo o nás</a></li>
                         <li><a class="menu__item" id="faqNavM" href="#faqAnchor">FAQ</a></li>
                         <li class="d-flex align-items-center justify-content-center">
-                            <button id="mobileNavRegisterButton" onclick="window.location.href='#register';" class="registerButton redirect btn btn-warning">Zaregistrovať</button>
+                            <button id="mobileNavRegisterButton" onclick="window.location.href='#register';" class="registerButton redirect menu__item btn btn-warning">Zaregistrovať</button>
                         </li>
                     </ul>
                 </div>
@@ -105,7 +99,27 @@
         <a class="navbar-brand" id="aboutNav" href="#about">Niečo o nás</a>
         <a class="navbar-brand" id="faqNav" href="#faqAnchor">FAQ</a>
     </div>
+
+
 </nav>
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+    </symbol>
+</svg>
+<div id="alertWrapper" class="alert alert-success" role="alert">
+    <div id="alertInner" class="d-flex align-items-center justify-content-between">
+        <div id="alertLeft">
+            <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
+            <div>
+                Registrácia prebehla úspešne! Poslali sme Ti mail na zadanú adresu. <br> Ak Ti neprišiel, skontroluj si SPAM. Ak je
+                tam iný technický problém, kontaktuj nás na hackathon@erstegroup.com. Tešíme sa na Teba!
+            </div>
+        </div>
+        <button id="closeAlert" type="button" class="btn-close" aria-label="Close"></button>
+    </div>
+</div>
+
 
 <div id="welcomeSlide" class="slide">
     <div id="welcomeContentWrapper" class="contentWrapper row justify-content-center">
@@ -452,12 +466,12 @@
             <div class="juryCol col">
                 <h2 class="customBold medium">Porota bude v zložení:<a class="anchor" id="evaluation"></a></h2>
                 <ul>
-                    <li>Inovačný špecialista (Erste Digital)</li>
-                    <li>Šéf predmetu (TUKE)</li>
-                    <li>HR expert (Erste Digital)</li>
-                    <li>Zástupca študentov (TUKE)</li>
-                    <li>Programátor (Erste Digital)</li>
-                    <li>(ešte sa môže zmeniť)</li>
+                    <li><code class="customBold small bulletBlack">Inovačný špecialista (Erste Digital)</code></li>
+                    <li><code class="customBold small bulletBlack">Šéf predmetu (TUKE)</code></li>
+                    <li><code class="customBold small bulletBlack">HR expert (Erste Digital)</code></li>
+                    <li><code class="customBold small bulletBlack">Zástupca študentov (TUKE)</code></li>
+                    <li><code class="customBold small bulletBlack">Programátor (Erste Digital)</code></li>
+                    <li><code class="customBold small bulletBlack">(ešte sa môže zmeniť)</code></li>
                 </ul>
             </div>
             <div class="juryCol col">
@@ -634,7 +648,7 @@
                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                      data-bs-parent="#faq">
                     <div class="accordion-body">
-                        21.-22.10., Košice (Letná 9), TUKE, Hackathon, 24 hodín nonstop. Lebo je to super.
+                        4.-5.11, Košice (Letná 9), TUKE, Hackathon, 24 hodín nonstop. Lebo je to super.
                         Aj vyhrať, aj sa naučiť, aj zabaviť. Erste Digital a TUKE spolu.
                     </div>
                 </div>
@@ -665,7 +679,7 @@
                      data-bs-parent="#faq">
                     <div class="accordion-body">
                         Dostaneš welcome darček (niečo drobné), môžeš vyhrať skutočne hodnotné ceny za rôzne
-                        ad-hoc súťaže, ako tím súťažíš o cash (sme banka – na účet ;)) 1 000, 500 a 300 Eur,
+                        ad-hoc súťaže, ako tím súťažíš o cash (sme banka – na účet ;)) 2 000, 1000 a 500 Eur,
                         môžeš získať aj ďalšie darčeky, keď sa nám niečo bude extra páčiť (napríklad vážne
                         vtipný pitch), získaš zápočet. Tiež máš zápis do CV (nepodceňuj význam!), získaš
                         zaujímavé kontakty a bonus je možná pracovná ponuka, ak hľadáš niečo.
@@ -756,9 +770,9 @@
     <div id="footerFirstRow">
         <div id="footerTextWrapper">
             <div id="footerLinkWrapper">
-                <a href="https://www.erstedigital.com/sk/dataprotection/imprint" class="footerLink customBold small text-decoration-none">Imprint</a>
-                <a href="https://www.erstedigital.com/sk/dataprotection/disclaimer" class="footerLink customBold small text-decoration-none">Disclaimer</a>
-                <a href="https://www.erstedigital.com/sk/dataprotection" class="footerLink customBold small text-decoration-none">Privacy Notice</a>
+                <a href="https://www.erstedigital.com/sk/dataprotection/imprint" class="footerLink customBold small text-decoration-none" target="_blank">Imprint</a>
+                <a href="https://www.erstedigital.com/sk/dataprotection/disclaimer" class="footerLink customBold small text-decoration-none" target="_blank">Disclaimer</a>
+                <a href="https://www.erstedigital.com/sk/dataprotection" class="footerLink customBold small text-decoration-none" target="_blank">Privacy Notice</a>
             </div>
             <div id="footerHacTextWrapper">
                 <code class="customBold big hackathon">HACKATHON</code>
@@ -771,7 +785,7 @@
                 © 2022 Erste Digital GmbH
             </div>
             <div>
-                <img src="public/images/hackathon/linkedInLogo.png" alt="LinkedIn">
+                <a href="https://www.linkedin.com/company/erstedigital" target="_blank"><img src="public/images/hackathon/linkedInLogo.png" alt="LinkedIn"></a>
             </div>
         </div>
     </div>

@@ -153,7 +153,7 @@ var homeWaypoint = new Waypoint({
     element: document.getElementById('home'),
     handler: function(direction) {
         let all = $('.navbar-brand')
-        all.css('color', 'black');
+        all.css('color', '#00497B');
         all.css('text-decoration', 'none');
         if(direction === "down") {
             let cur = $('#homeNav')
@@ -168,15 +168,15 @@ var whyWaypoint = new Waypoint({
     element: document.getElementById('why'),
     handler: function(direction) {
         let all = $('.navbar-brand')
-        all.css('color', 'black');
+        all.css('color', '#00497B');
         all.css('text-decoration', 'none');
         if(direction === "up") {
             let prev = $('#homeNav')
-            prev.css('color', '#00497B');
+            prev.css('color', '#ff7900');
             prev.css('text-decoration', 'underline');
         } else {
             let cur = $('#whyNav')
-            cur.css('color', '#00497B');
+            cur.css('color', '#ff7900');
             cur.css('text-decoration', 'underline');
         }
     },
@@ -187,15 +187,15 @@ var teamWaypoint = new Waypoint({
     element: document.getElementById('team'),
     handler: function(direction) {
         let all = $('.navbar-brand')
-        all.css('color', 'black');
+        all.css('color', '#00497B');
         all.css('text-decoration', 'none');
         if(direction === "up") {
             let prev = $('#whyNav')
-            prev.css('color', '#00497B');
+            prev.css('color', '#ff7900');
             prev.css('text-decoration', 'underline');
         } else {
             let cur = $('#teamNav')
-            cur.css('color', '#00497B');
+            cur.css('color', '#ff7900');
             cur.css('text-decoration', 'underline');
         }
     },
@@ -206,15 +206,15 @@ var requirementsWaypoint = new Waypoint({
     element: document.getElementById('requirements'),
     handler: function(direction) {
         let all = $('.navbar-brand')
-        all.css('color', 'black');
+        all.css('color', '#00497B');
         all.css('text-decoration', 'none');
         if(direction === "up") {
             let prev =$('#teamNav')
-            prev.css('color', '#00497B');
+            prev.css('color', '#ff7900');
             prev.css('text-decoration', 'underline');
         } else {
             let cur =$('#requirementsNav')
-            cur.css('color', '#00497B');
+            cur.css('color', '#ff7900');
             cur.css('text-decoration', 'underline');
         }
     },
@@ -225,15 +225,15 @@ var programWaypoint = new Waypoint({
     element: document.getElementById('program'),
     handler: function(direction) {
         let all = $('.navbar-brand')
-        all.css('color', 'black');
+        all.css('color', '#00497B');
         all.css('text-decoration', 'none');
         if(direction === "up") {
             let prev =$('#requirementsNav')
-            prev.css('color', '#00497B');
+            prev.css('color', '#ff7900');
             prev.css('text-decoration', 'underline');
         } else {
             let cur = $('#programNav')
-            cur.css('color', '#00497B');
+            cur.css('color', '#ff7900');
             cur.css('text-decoration', 'underline');
         }
     },
@@ -244,15 +244,15 @@ var evaluationWaypoint = new Waypoint({
     element: document.getElementById('evaluation'),
     handler: function(direction) {
         let all = $('.navbar-brand')
-        all.css('color', 'black');
+        all.css('color', '#00497B');
         all.css('text-decoration', 'none');
         if(direction === "up") {
             let prev =$('#programNav')
-            prev.css('color', '#00497B');
+            prev.css('color', '#ff7900');
             prev.css('text-decoration', 'underline');
         } else {
             let cur =$('#evaluationNav')
-            cur.css('color', '#00497B');
+            cur.css('color', '#ff7900');
             cur.css('text-decoration', 'underline');
         }
     },
@@ -263,15 +263,15 @@ var topicWaypoint = new Waypoint({
     element: document.getElementById('topic'),
     handler: function(direction) {
         let all = $('.navbar-brand')
-        all.css('color', 'black');
+        all.css('color', '#00497B');
         all.css('text-decoration', 'none');
         if(direction === "up") {
             let prev =$('#evaluationNav')
-            prev.css('color', '#00497B');
+            prev.css('color', '#ff7900');
             prev.css('text-decoration', 'underline');
         } else {
             let cur =$('#topicNav')
-            cur.css('color', '#00497B');
+            cur.css('color', '#ff7900');
             cur.css('text-decoration', 'underline');
         }
     },
@@ -282,15 +282,15 @@ var aboutWaypoint = new Waypoint({
     element: document.getElementById('about'),
     handler: function(direction) {
         let all = $('.navbar-brand')
-        all.css('color', 'black');
+        all.css('color', '#00497B');
         all.css('text-decoration', 'none');
         if(direction === "up") {
             let prev =$('#topicNav')
-            prev.css('color', '#00497B');
+            prev.css('color', '#ff7900');
             prev.css('text-decoration', 'underline');
         } else {
             let cur =$('#aboutNav')
-            cur.css('color', '#00497B');
+            cur.css('color', '#ff7900');
             cur.css('text-decoration', 'underline');
         }
     },
@@ -301,15 +301,15 @@ var faqWaypoint = new Waypoint({
     element: document.getElementById('faqAnchor'),
     handler: function(direction) {
         let all = $('.navbar-brand')
-        all.css('color', 'black');
+        all.css('color', '#00497B');
         all.css('text-decoration', 'none');
         if(direction === "up") {
             let prev = $('#aboutNav')
-            prev.css('color', '#00497B');
+            prev.css('color', '#ff7900');
             prev.css('text-decoration', 'underline');
         } else {
             let cur =$('#faqNav')
-            cur.css('color', '#00497B');
+            cur.css('color', '#ff7900');
             cur.css('text-decoration', 'underline');
         }
     },
@@ -322,4 +322,22 @@ document.querySelector('#teamCheck').addEventListener('change', () => {
     } else {
         $('#teamNameInputWrapper').hide()
     }
+})
+
+$("#registerForm").submit(function() {
+    $("#alertWrapper").css('display', 'flex')
+})
+
+$('#closeAlert').click(function() {
+    $("#alertWrapper").css('display', 'none')
+})
+
+
+$('.menu__item').click(function(event) {
+    $('.menu__box').css('display', 'none')
+    $('#menu__toggle').prop( "checked", false );
+})
+
+$('.menu__btn').click(function(event) {
+    $('.menu__box').css('display', 'block')
 })
