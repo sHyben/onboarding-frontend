@@ -323,4 +323,3 @@ document.querySelector('#teamCheck').addEventListener('change', () => {
         $('#teamNameInputWrapper').hide()
     }
 })
-
