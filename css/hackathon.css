@@ -145,6 +145,7 @@ li {
 .customBold {
     font-family: 'Open Sans';
     font-weight: bold;
+    
 }
 
 .customBold.big {
@@ -165,7 +166,7 @@ li {
 }
 
 .customBold.small {
-    font-size: 1.2vw;
+    font-size: 1vw;
     color: #00497B;
 }
 
@@ -461,6 +462,7 @@ li {
 #topicSlide {
     height: 125vh;
     margin-bottom: 5vh;
+    
 }
 
 .topicWrapper {
@@ -475,7 +477,7 @@ li {
 }
 
 .topicImg {
-    height: 60vh;
+    height: 55vh;
     width: 100%;
     border-radius: 1vh 1vh 0 0;
 }
@@ -517,7 +519,7 @@ li {
 
 /* 12th page - organizers */
 #peopleSlide {
-    height: 235vh;
+    height: 250vh;
 }
 
 #organizersWrapper {
@@ -548,13 +550,20 @@ li {
     justify-content: center;
     margin-bottom: 2vh;
 }
-
+#faqImg{
+    width:80px;
+}
 
 /* Footer */
 #footer {
-    height: 14vh;
+    /* height: 18vh; */
+    padding:20px;
     background-color: #DFF2FD;
     width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+   
 }
 
 #footerFirstRow, #footerSecondRow {
@@ -570,6 +579,7 @@ li {
     align-items: center;
 }
 
+
 #footerSecondRow {
     width: 80vw;
     margin: 0 auto 0;
@@ -577,6 +587,9 @@ li {
     padding-top: 1vh;
 }
 
+#footerSecondRow img{
+   width:20px;
+}
 .footerLink {
     padding-right: 2vh;
 }
@@ -667,4 +680,31 @@ li {
 }
 .menu__item:hover {
     background-color: #DFF2FD;
+}
+
+/* Podmienky */
+
+.podmienka{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.textPodmienka{
+    padding-left: 15px;
+    margin-bottom:0;
+    padding-top:15px;
+}
+.podmienkyWrapper{
+    display: flex;
+   flex-direction: column;
+    align-items: flex-start;
+}
+/* /// */
+
+.points{
+    margin:0;
+    padding:0;
+    position: relative;
+    top:-40px;
 }

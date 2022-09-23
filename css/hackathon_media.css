@@ -1,1207 +1,1251 @@
 /* Mobile */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
-    html,
-    body,
-    .slide {
-        font-size: 2vh;
-    }
-
-    /* Anchors */
-    a.anchor {
-        top: -23vh;
-    }
-
-    #program, #faqAnchor {
-        top: -23.5vh;
-    }
-
-    #register {
-        top: -20vh;
-    }
-
-    #gallery {
-        top: -15vh;
-    }
-
-    #home {
-        top: -50vh;
-    }
-    /* End of anchors */
-
-    /* Navbar */
-    nav {
-        height: 10vh;
-        display: flex;
-        flex-direction: column;
-    }
-
-    #navbarFirstRowWrapper {
-        align-items: normal;
-    }
-
-    #navbarLogoWrapper {
-        width: 90vw;
-        height: 100%;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #logoText {
-        width: 100%;
-        margin-top: 1.5vh;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    #navbarHacText {
-        font-size: 2.5vh;
-        margin-right: 1.5vw;
-    }
-
-    #mobileMenu {
-        display: block;
-    }
-
-    #navBarLogo {
-        width: 90vw;
-        height: 5vh;
-        padding-right: 0;
-    }
-
-    #navbarLinks {
-       display: none;
-    }
-
-    #navbarRegisterButton {
-        display: none;
-    }
-
-    .hamburger-menu {
-        display: flex;
-    }
-
-    /* General */
-    h1 {
-        font-size: 3vh;
-        padding-left: 5vw;
-        padding-right: 5vw;
-
-    }
-
-    .contentWrapper {
-        width: 90vw;
-        height: 84vh;
-    }
-
-    .customBold.big {
-        font-size: 3vh;
-    }
-
-    .customBold.medium {
-        font-size: 2.5vh;
-    }
-
-    .customBold.medium.time {
-        font-size: 2vh;
-    }
-
-    .customBold.small {
-        font-size: 2vh;
-    }
-
-    /* 1st page - welcome */
-    #welcomeSlide {
-        height: 98vh;
-    }
-
-    #welcomeContentWrapper {
-        display: flex;
-        flex-flow: column;
-        margin: 19vh auto 0;
-    }
-
-    #welcomeText {
-        order: 2;
-        width: 100%;
-    }
-
-    .welcomeHead {
-        width: 100%;
-    }
-
-    .hackathonLogoWrapper {
-        width: 100%;
-        order: 1;
-        margin-bottom: 2vh;
-    }
-
-    .logoImg {
-        height: 50vh;
-    }
-
-    /* 2nd page - why */
-    #whySlide {
-        height: 110vh;
-    }
-
-    .carousel-indicators {
-        display: none;
-    }
-
-    #carouselWrapper {
-        width: 100%;
-    }
-
-    /* 3rd page - register */
-    #registrationSlide {
-        height: 130vh;
-        margin-bottom: 5vh;
-    }
-
-    #formContentWrapper {
-        flex-flow: column;
-    }
-
-    .registerButton {
-        font-size: 2vh;
-        width: 18vh;
-        height: 5.5vh;
-    }
-
-    #teamNameInputWrapper {
-        display: none;
-    }
-
-    .videoWrapper {
-        width: 100%;
-    }
-
-    #youtubeFrame {
-        width: 100%;
-        height: 20vh;
-        order: 2;
-        margin-bottom: 0;
-    }
-
-    #otherVideosWrapper {
-        display: flex;
-        flex-direction: column;
-        height: 50vh;
-        width: 100%;
-    }
-
-    #youtubeFrame2, #youtubeFrame3 {
-        margin-top: 5vh;
-        height: 20vh;
-        width: 100%;
-    }
-
-    #youtubeFrame2 {
-        margin-right: 2vh;
-    }
-
-    .smallTextTerms {
-        margin-top: 2vh;
-        margin-bottom: 2vh;
-        font-size: 1.5vh;
-        order: 1;
-    }
-
-    /* 4th page - gallery */
-    #gallerySlide {
-        height: 100vh;
-    }
-
-    #galleryText, #gallerySlideWrapper div, .container-sm {
-        width: 100%;
-    }
-
-    .inline-gallery-container {
-        width: 100%;
-        height: 60vh;
-    }
-
-    /* 5th page - skills */
-    #skillSlide {
-        height: 130vh;
-    }
-
-    #skillSlide h1 {
-        padding-bottom: 0.5vh;
-    }
-
-    #skillContentWrapper {
-        display: flex;
-        flex-direction: column;
-        height: 85%;
-    }
-
-    #skillContentWrapper div {
-        width: 100%;
-        margin-bottom: 2vh;
-    }
-
-    .skillsImg {
-        height: 25vw;
-    }
-
-    /* 6th page - requirements */
-    #requirementsSlide {
-        height: 55vh;
-    }
-
-    #requirementsContentWrapper {
-        height: 100%;
-    }
-
-    #reqTable td:first-child {
-        width: 15vw;
-    }
-
-    #reqTable td:last-child {
-        width: 85vw;
-        padding-top: 15px;
-    }
-
-    #reqTableCol {
-        height: 4vw;
-        max-height: 4vw;
-    }
-
-    .reqCheckmarkImg {
-        height: 4vh;
-        width: auto;
-    }
-
-    .reqText {
-        width: 75%;
-        height: 6vw;
-    }
-
-    /* 7,8th page - program 1,2 */
-    #programSlide {
-        height: 135vh;
-        margin-bottom: 2vh;
-    }
-
-    #programSlide2 {
-        height: 115vh;
-    }
-
-    #programContentWrapper, #programContent2Wrapper {
-        height: 90%;
-    }
-
-    #programContent2Wrapper {
-        height: 95%;
-    }
-
-    .day {
-        padding-left: 10px;
-    }
-
-    .programHead.day {
-        font-size: 2.2vh;
-    }
-
-    .programHead.date {
-        font-size: 1.8vh;
-    }
-
-    .programTable td:first-child {
-        width: 5vw;
-        padding-right: 2vw;
-    }
-
-    .programTable td:last-child {
-        padding-left: 1.5vh;
-    }
-
-    .programTable td {
-        padding-bottom: 2.5vw;
-        padding-top: 2.5vw;
-    }
-
-    /* 9th page - evaluation */
-    #evaluationSlide {
-        height: 155vh;
-    }
-
-    #evaluationJury {
-        height: 55vh;
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 4vh;
-    }
-
-    #evaluationText {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #evalImg {
-        width: 25vh;
-        max-height: 25vh;
-    }
-
-    #evaluationText div {
-        width: 100%;
-    }
-
-    .evalImages {
-        height: 25vw;
-    }
-
-    /* 10th page - topics */
-    #topicSlide {
-        height: 200vh;
-        margin-bottom: 5vh;
-    }
-
-    #topicSlide {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #topicContentWrapper div {
-        width: 100%;
-        margin-bottom: 2vh;
-    }
-
-    .topicImg {
-        height: 30vh;
-    }
-
-    .topicTextWrapper {
-        height: 60vh;
-    }
-
-    .column {
-        height: auto;
-    }
-
-    .column_big {
-        align-self: center;
-        height: 30vh;
-    }
-
-    .column_heading {
-        height: 5vh;
-        padding-bottom: 10px;
-    }
-
-    .topicText {
-        padding: 5vw;
-    }
-
-    #lastColumn {
-        height: auto;
-    }
-
-    #lastColumn .topicTextWrapper {
-        height: 60vh;
-    }
-
-    #lastColumn .column_heading {
-        height: 5vh;
-    }
-
-    /* 11th page - about */
-    #aboutSlide {
-        height: 60vh;
-        margin-bottom: 2vh;
-    }
-
-    /* 12th page - organizers */
-    #peopleSlide {
-        height: 235vh;
-    }
-
-    #organizersWrapper {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2vh;
-    }
-    /* 13th page - faq */
-    #faqSlide {
-        height: 145vh;
-    }
-
-    /* Footer */
-    #footer {
-        height: 17vh;
-    }
-
-    #footerFirstRow {
-        padding-top: 1vh;
-        padding-bottom: 1vh;
-    }
-
-    #footerTextWrapper {
-        width: 90vw;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    #footerLinkWrapper {
-        width: 100%;
-        order: 2;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    #footerHacTextWrapper {
-        order: 1;
-    }
-
-    #footerSecondRow {
-        width: 90vw;
-        padding-top: 1vh;
-        padding-bottom: 0.5vh;
-    }
-
-    .footerLink {
-        padding-right: 0;
-    }
+  html,
+  body,
+  .slide {
+    font-size: 2vh;
+  }
+
+  /* Anchors */
+  a.anchor {
+    top: -23vh;
+  }
+
+  #program,
+  #faqAnchor {
+    top: -23.5vh;
+  }
+
+  #register {
+    top: -20vh;
+  }
+
+  #gallery {
+    top: -15vh;
+  }
+
+  #home {
+    top: -50vh;
+  }
+  /* End of anchors */
+
+  /* Navbar */
+  nav {
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #navbarFirstRowWrapper {
+    align-items: normal;
+  }
+
+  #navbarLogoWrapper {
+    width: 90vw;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #logoText {
+    width: 100%;
+    margin-top: 1.5vh;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #navbarHacText {
+    font-size: 2.5vh;
+    margin-right: 1.5vw;
+  }
+
+  #mobileMenu {
+    display: block;
+  }
+
+  #navBarLogo {
+    width: 90vw;
+    height: 5vh;
+    padding-right: 0;
+  }
+
+  #navbarLinks {
+    display: none;
+  }
+
+  #navbarRegisterButton {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: flex;
+  }
+
+  /* General */
+  h1 {
+    font-size: 3vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  .contentWrapper {
+    width: 90vw;
+    height: 84vh;
+  }
+
+  .customBold.big {
+    font-size: 3vh;
+  }
+
+  .customBold.medium {
+    font-size: 2.5vh;
+  }
+
+  .customBold.medium.time {
+    font-size: 2vh;
+  }
+
+  .customBold.small {
+    font-size: 2vh;
+  }
+
+  /* 1st page - welcome */
+  #welcomeSlide {
+    height: 98vh;
+  }
+
+  #welcomeContentWrapper {
+    display: flex;
+    flex-flow: column;
+    margin: 19vh auto 0;
+  }
+
+  #welcomeText {
+    order: 2;
+    width: 100%;
+  }
+
+  .welcomeHead {
+    width: 100%;
+  }
+
+  .hackathonLogoWrapper {
+    width: 100%;
+    order: 1;
+    margin-bottom: 2vh;
+  }
+
+  .logoImg {
+    height: 50vh;
+  }
+
+  /* 2nd page - why */
+  #whySlide {
+    height: 110vh;
+  }
+
+  .carousel-indicators {
+    display: none;
+  }
+
+  #carouselWrapper {
+    width: 100%;
+  }
+
+  /* 3rd page - register */
+  #registrationSlide {
+    height: 130vh;
+    margin-bottom: 5vh;
+  }
+
+  #formContentWrapper {
+    flex-flow: column;
+  }
+
+  .registerButton {
+    font-size: 2vh;
+    width: 20.5vh;
+    height: 6.5vh;
+    color: white;
+  }
+
+  #teamNameInputWrapper {
+    display: none;
+  }
+
+  .videoWrapper {
+    width: 100%;
+  }
+
+  #youtubeFrame {
+    width: 100%;
+    height: 20vh;
+    order: 2;
+    margin-bottom: 0;
+  }
+
+  #otherVideosWrapper {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    width: 100%;
+  }
+
+  #youtubeFrame2,
+  #youtubeFrame3 {
+    margin-top: 5vh;
+    height: 20vh;
+    width: 100%;
+  }
+
+  #youtubeFrame2 {
+    margin-right: 2vh;
+  }
+
+  .smallTextTerms {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    font-size: 1.5vh;
+    order: 1;
+  }
+
+  /* 4th page - gallery */
+  #gallerySlide {
+    height: 100vh;
+  }
+
+  #galleryText,
+  #gallerySlideWrapper div,
+  .container-sm {
+    width: 100%;
+  }
+
+  .inline-gallery-container {
+    width: 100%;
+    height: 60vh;
+  }
+
+  /* 5th page - skills */
+  #skillSlide {
+    height: 165vh;
+  }
+
+  #skillSlide h1 {
+    padding-bottom: 0.5vh;
+  }
+
+  #skillContentWrapper {
+    display: flex;
+    flex-direction: column;
+    height: 85%;
+  }
+
+  #skillContentWrapper div {
+    width: 100%;
+    margin-bottom: 2vh;
+  }
+
+  .skillsImg {
+    height: 45vw;
+  }
+.skilltext{
+    text-align: center;
+}
+  /* 6th page - requirements */
+  #requirementsSlide {
+    height: 55vh;
+  }
+
+  #requirementsContentWrapper {
+    height: 100%;
+  }
+
+  #reqTable td:first-child {
+    width: 15vw;
+  }
+
+  #reqTable td:last-child {
+    width: 85vw;
+    padding-top: 15px;
+  }
+
+  #reqTableCol {
+    height: 4vw;
+    max-height: 4vw;
+  }
+
+  .reqCheckmarkImg {
+    height: 4vh;
+    width: auto;
+  }
+
+  .reqText {
+    width: 75%;
+    height: 6vw;
+  }
+
+  /* 7,8th page - program 1,2 */
+  #programSlide {
+    height: 135vh;
+    margin-bottom: 2vh;
+  }
+
+  #programSlide2 {
+    height: 115vh;
+  }
+
+  #programContentWrapper,
+  #programContent2Wrapper {
+    height: 90%;
+  }
+
+  #programContent2Wrapper {
+    height: 95%;
+  }
+
+  .day {
+    padding-left: 10px;
+  }
+
+  .programHead.day {
+    font-size: 2.2vh;
+  }
+
+  .programHead.date {
+    font-size: 1.8vh;
+  }
+
+  .programTable td:first-child {
+    width: 5vw;
+    padding-right: 2vw;
+  }
+
+  .programTable td:last-child {
+    padding-left: 1.5vh;
+  }
+
+  .programTable td {
+    padding-bottom: 2.5vw;
+    padding-top: 2.5vw;
+  }
+
+  /* 9th page - evaluation */
+  #evaluationSlide {
+    height: 155vh;
+  }
+
+  #evaluationJury {
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4vh;
+  }
+
+  #evaluationText {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #evalImg {
+    width: 25vh;
+    max-height: 25vh;
+  }
+
+  #evaluationText div {
+    width: 100%;
+  }
+
+  .evalImages {
+    height: 25vw;
+  }
+
+  /* 10th page - topics */
+  #topicSlide {
+    height: 200vh;
+    margin-bottom: 5vh;
+  }
+
+  #topicSlide {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #topicContentWrapper div {
+    width: 100%;
+    margin-bottom: 2vh;
+  }
+
+  .topicImg {
+    height: 30vh;
+  }
+
+  .topicTextWrapper {
+    height: 60vh;
+  }
+
+  .column {
+    height: auto;
+  }
+
+  .column_big {
+    align-self: center;
+    height: 30vh;
+  }
+
+  .column_heading {
+    height: 5vh;
+    padding-bottom: 10px;
+  }
+
+  .topicText {
+    padding: 5vw;
+  }
+
+  #lastColumn {
+    height: auto;
+  }
+
+  #lastColumn .topicTextWrapper {
+    height: 60vh;
+  }
+
+  #lastColumn .column_heading {
+    height: 5vh;
+  }
+
+  /* 11th page - about */
+  #aboutSlide {
+    height: 60vh;
+    margin-bottom: 2vh;
+  }
+
+  /* 12th page - organizers */
+  #peopleSlide {
+    height: 235vh;
+  }
+
+  #organizersWrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2vh;
+  }
+  /* 13th page - faq */
+  #faqSlide {
+    height: 145vh;
+  }
+
+  /* Footer */
+  #footer {
+    height: 17vh;
+  }
+
+  #footerFirstRow {
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+  }
+
+  #footerTextWrapper {
+    width: 90vw;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #footerLinkWrapper {
+    width: 100%;
+    order: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #footerHacTextWrapper {
+    order: 1;
+  }
+
+  #footerSecondRow {
+    width: 90vw;
+    padding-top: 1vh;
+    padding-bottom: 0.5vh;
+  }
+
+  .footerLink {
+    padding-right: 0;
+  }
+  .points {
+    top: 0;
+    padding-top: 10px;
+  }
 }
 
 /* Tablets */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-    html,
-    body,
-    .slide {
-        font-size: 2vh;
-    }
-
-    /* Anchors */
-    a.anchor {
-        top: -23vh;
-    }
-
-    #program, #faqAnchor {
-        top: -23.5vh;
-    }
-
-    #register {
-        top: -20vh;
-    }
-
-    #gallery {
-        top: -15vh;
-    }
-
-    #home {
-        top: -50vh;
-    }
-    /* End of anchors */
-
-    /* Navbar */
-    nav {
-        height: 10vh;
-        display: flex;
-        flex-direction: column;
-    }
-
-    #navbarFirstRowWrapper {
-        align-items: normal;
-    }
-
-    #navbarLogoWrapper {
-        width: 90vw;
-        height: 100%;
-        flex-direction: column;
-        align-items: center;
-        justify-content: left;
-    }
-
-    #logoText {
-        width: 100%;
-        margin-top: 1.5vh;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    #navbarHacText {
-        font-size: 2.5vh;
-        margin-right: 1.5vw;
-    }
-
-    #mobileMenu {
-        display: block;
-    }
-
-    #navBarLogo {
-        width: auto;
-        height: 5vh;
-        padding-right: 0;
-    }
-
-    #navbarLinks {
-        display: none;
-    }
-
-    #navbarRegisterButton {
-        display: none;
-    }
-
-    .hamburger-menu {
-        display: flex;
-    }
-    .menu__btn {
-        top: 70px;
-        right: 60px;
-    }
-
-    /* General */
-    h1 {
-        font-size: 3vh;
-    }
-
-    .contentWrapper {
-        width: 90vw;
-        height: 84vh;
-    }
-
-    .customBold.big {
-        font-size: 3vh;
-    }
-
-    .customBold.medium {
-        font-size: 2.5vh;
-    }
-
-    .customBold.medium.time {
-        font-size: 2vh;
-    }
-
-    .customBold.small {
-        font-size: 2vh;
-    }
-
-    /* 1st page - welcome */
-    #welcomeSlide {
-        height: 95vh;
-    }
-    #welcomeContentWrapper {
-        display: flex;
-        flex-flow: column;
-        margin: 18vh auto 0;
-    }
-
-    #welcomeText {
-        order: 2;
-        width: 100%;
-
-    }
-    .welcomeHead {
-        width: 100%;
-    }
-
-    .hackathonLogoWrapper {
-        width: 100%;
-        order: 1;
-        margin-bottom: 2vh;
-    }
-
-    .logoImg {
-        height: 60vh;
-    }
-
-    /* 2nd page - why */
-    #whySlide {
-        height: 95vh;
-    }
-
-    .carousel-indicators {
-        display: none;
-    }
-
-    #carouselWrapper {
-        width: 100%;
-    }
-
-    /* 3rd page - register */
-    #registrationSlide {
-        height: 135vh;
-        margin-bottom: 5vh;
-    }
-
-    #formContentWrapper {
-        flex-flow: column;
-    }
-
-    .registerButton {
-        font-size: 1.5vh;
-        width: 14vh;
-        height: 4vh;
-    }
-
-    #teamNameInputWrapper {
-        display: none;
-    }
-
-    .videoWrapper {
-        width: 100%;
-    }
-
-    #youtubeFrame {
-        width: 100%;
-        height: 30vh;
-        order: 2;
-        margin-bottom: 0;
-    }
-
-    #otherVideosWrapper {
-        display: flex;
-        flex-direction: column;
-        height: 60vh;
-        width: 100%;
-    }
-
-    #youtubeFrame2, #youtubeFrame3 {
-        margin-top: 5vh;
-        height: 30vh;
-        width: 100%;
-    }
-
-    #youtubeFrame2 {
-        margin-right: 2vh;
-    }
-
-    .smallTextTerms {
-        margin-top: 2vh;
-        font-size: 1.5vh;
-        order: 1;
-    }
-
-    /* 4th page - gallery */
-    #gallerySlide {
-        height: 95vh;
-    }
-
-    #galleryText, #gallerySlideWrapper div, .container-sm {
-        width: 100%;
-    }
-
-    .inline-gallery-container {
-        width: 100%;
-        height: 60vh;
-    }
-
-    /* 5th page - skills */
-    #skillSlide {
-        height: 145vh;
-    }
-
-    #skillSlide h1 {
-        padding-bottom: 0.5vh;
-    }
-
-    #skillContentWrapper {
-        display: flex;
-        flex-direction: column;
-        height: 85%;
-    }
-
-    #skillContentWrapper div {
-        width: 100%;
-        margin-bottom: 2vh;
-    }
-
-    .skillsImg {
-        height: 25vw;
-    }
-
-    /* 6th page - requirements */
-    #requirementsSlide {
-        height: 40vh;
-    }
-
-    #requirementsContentWrapper {
-        height: 100%;
-    }
-
-    #reqTable td:first-child {
-        width: 15vw;
-    }
-
-    #reqTable td:last-child {
-        width: 85vw;
-        padding-top: 15px;
-    }
-
-    #reqTableCol {
-        height: 4vw;
-        max-height: 4vw;
-    }
-
-    .reqCheckmarkImg {
-        height: 4vh;
-        width: auto;
-    }
-
-    .reqText {
-        width: 75%;
-        height: 6vw;
-    }
-
-    /* 7,8th page - program 1,2 */
-    #programSlide {
-        height: 115vh;
-        margin-bottom: 2vh;
-    }
-
-    #programSlide2 {
-        height: 95vh;
-    }
-
-    #programContentWrapper {
-        height: 90%;
-    }
-
-    #programContent2Wrapper {
-        height: 95%;
-    }
-
-    .day {
-        padding-left: 10px;
-    }
-
-    .programHead.day {
-        font-size: 2.2vh;
-    }
-
-    .programHead.date {
-        font-size: 1.8vh;
-    }
-
-    .programTable td:first-child {
-        width: 5vw;
-        padding-right: 2vw;
-    }
-
-    .programTable td:last-child {
-        padding-left: 1.5vh;
-    }
-
-    .programTable td {
-        padding-bottom: 2.5vw;
-        padding-top: 2.5vw;
-    }
-
-    /* 9th page - evaluation */
-    #evaluationSlide {
-        height: 165vh;
-    }
-
-    #evaluationJury {
-        height: 60vh;
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 2vh;
-    }
-
-    #evaluationText {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #evaluationText div {
-        width: 100%;
-    }
-
-    .evalImages {
-        height: 25vw;
-    }
-
-    /* 10th page - topics */
-    #topicSlide {
-        height: 195vh;
-        margin-bottom: 5vh;
-    }
-
-    #topicSlide {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #topicContentWrapper div {
-        width: 100%;
-        margin-bottom: 2vh;
-    }
-
-    .topicImg {
-        height: 50vh;
-    }
-
-    .topicTextWrapper {
-        height: 40vh;
-    }
-
-    .column {
-        height: auto;
-    }
-
-    .column_big {
-        align-self: center;
-        height: 30vh;
-    }
-
-    .column_heading {
-        height: 5vh;
-        padding-bottom: 10px;
-    }
-
-    .topicText {
-        padding: 5vw;
-    }
-
-    #lastColumn {
-        height: auto;
-    }
-
-    #lastColumn .topicTextWrapper {
-        height: 35vh;
-    }
-
-    #lastColumn .column_heading {
-        height: 5vh;
-    }
-
-    /* 11th page - about */
-    #aboutSlide {
-        height: 45vh;
-        margin-bottom: 2vh;
-    }
-
-    /* 12th page - organizers */
-    #peopleSlide {
-        height: 175vh;
-    }
-
-    #organizersWrapper {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2vh;
-    }
-    /* 13th page - faq */
-    #faqSlide {
-        height: 120vh;
-    }
-    /* Footer */
-    #footerTextWrapper, #footerSecondRow {
-        width: 90vw;
-    }
-
+  html,
+  body,
+  .slide {
+    font-size: 2vh;
+  }
+
+  /* Anchors */
+  a.anchor {
+    top: -23vh;
+  }
+
+  #program,
+  #faqAnchor {
+    top: -23.5vh;
+  }
+
+  #register {
+    top: -20vh;
+  }
+
+  #gallery {
+    top: -15vh;
+  }
+
+  #home {
+    top: -50vh;
+  }
+  /* End of anchors */
+
+  /* Navbar */
+  nav {
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #navbarFirstRowWrapper {
+    align-items: normal;
+  }
+
+  #navbarLogoWrapper {
+    width: 90vw;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+  }
+
+  #logoText {
+    width: 100%;
+    margin-top: 1.5vh;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #navbarHacText {
+    font-size: 2.5vh;
+    margin-right: 1.5vw;
+  }
+
+  #mobileMenu {
+    display: block;
+  }
+
+  #navBarLogo {
+    width: auto;
+    height: 5vh;
+    padding-right: 0;
+  }
+
+  #navbarLinks {
+    display: none;
+  }
+
+  #navbarRegisterButton {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: flex;
+  }
+  .menu__btn {
+    top: 70px;
+    right: 60px;
+  }
+
+  /* General */
+  h1 {
+    font-size: 3vh;
+  }
+
+  .contentWrapper {
+    width: 90vw;
+    height: 84vh;
+  }
+
+  .customBold.big {
+    font-size: 3vh;
+  }
+
+  .customBold.medium {
+    font-size: 2.5vh;
+  }
+
+  .customBold.medium.time {
+    font-size: 2vh;
+  }
+
+  .customBold.small {
+    font-size: 2vh;
+  }
+
+  /* 1st page - welcome */
+  #welcomeSlide {
+    height: 95vh;
+  }
+  #welcomeContentWrapper {
+    display: flex;
+    flex-flow: column;
+    margin: 18vh auto 0;
+  }
+
+  #welcomeText {
+    order: 2;
+    width: 100%;
+  }
+  .welcomeHead {
+    width: 100%;
+  }
+
+  .hackathonLogoWrapper {
+    width: 100%;
+    order: 1;
+    margin-bottom: 2vh;
+  }
+
+  .logoImg {
+    height: 60vh;
+  }
+
+  /* 2nd page - why */
+  #whySlide {
+    height: 95vh;
+  }
+
+  .carousel-indicators {
+    display: none;
+  }
+
+  #carouselWrapper {
+    width: 100%;
+  }
+
+  /* 3rd page - register */
+  #registrationSlide {
+    height: 135vh;
+    margin-bottom: 5vh;
+  }
+
+  #formContentWrapper {
+    flex-flow: column;
+  }
+
+  .registerButton {
+    font-size: 1.5vh;
+    width: 14vh;
+    height: 4vh;
+  }
+
+  #teamNameInputWrapper {
+    display: none;
+  }
+
+  .videoWrapper {
+    width: 100%;
+  }
+
+  #youtubeFrame {
+    width: 100%;
+    height: 30vh;
+    order: 2;
+    margin-bottom: 0;
+  }
+
+  #otherVideosWrapper {
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    width: 100%;
+  }
+
+  #youtubeFrame2,
+  #youtubeFrame3 {
+    margin-top: 5vh;
+    height: 30vh;
+    width: 100%;
+  }
+
+  #youtubeFrame2 {
+    margin-right: 2vh;
+  }
+
+  .smallTextTerms {
+    margin-top: 2vh;
+    font-size: 1.5vh;
+    order: 1;
+  }
+
+  /* 4th page - gallery */
+  #gallerySlide {
+    height: 95vh;
+  }
+
+  #galleryText,
+  #gallerySlideWrapper div,
+  .container-sm {
+    width: 100%;
+  }
+
+  .inline-gallery-container {
+    width: 100%;
+    height: 60vh;
+  }
+
+  /* 5th page - skills */
+  #skillSlide {
+    height: 145vh;
+  }
+
+  #skillSlide h1 {
+    padding-bottom: 0.5vh;
+  }
+
+  #skillContentWrapper {
+    display: flex;
+    flex-direction: column;
+    height: 85%;
+  }
+
+  #skillContentWrapper div {
+    width: 100%;
+    margin-bottom: 2vh;
+  }
+
+  .skillsImg {
+    height: 25vw;
+  }
+
+  /* 6th page - requirements */
+  #requirementsSlide {
+    height: 40vh;
+  }
+
+  #requirementsContentWrapper {
+    height: 100%;
+  }
+
+  #reqTable td:first-child {
+    width: 15vw;
+  }
+
+  #reqTable td:last-child {
+    width: 85vw;
+    padding-top: 15px;
+  }
+
+  #reqTableCol {
+    height: 4vw;
+    max-height: 4vw;
+  }
+
+  .reqCheckmarkImg {
+    height: 4vh;
+    width: auto;
+  }
+
+  .reqText {
+    width: 75%;
+    height: 6vw;
+  }
+
+  /* 7,8th page - program 1,2 */
+  #programSlide {
+    height: 115vh;
+    margin-bottom: 2vh;
+  }
+
+  #programSlide2 {
+    height: 95vh;
+  }
+
+  #programContentWrapper {
+    height: 90%;
+  }
+
+  #programContent2Wrapper {
+    height: 95%;
+  }
+
+  .day {
+    padding-left: 10px;
+  }
+
+  .programHead.day {
+    font-size: 2.2vh;
+  }
+
+  .programHead.date {
+    font-size: 1.8vh;
+  }
+
+  .programTable td:first-child {
+    width: 5vw;
+    padding-right: 2vw;
+  }
+
+  .programTable td:last-child {
+    padding-left: 1.5vh;
+  }
+
+  .programTable td {
+    padding-bottom: 2.5vw;
+    padding-top: 2.5vw;
+  }
+
+  /* 9th page - evaluation */
+  #evaluationSlide {
+    height: 165vh;
+  }
+
+  #evaluationJury {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2vh;
+  }
+
+  #evaluationText {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #evaluationText div {
+    width: 100%;
+  }
+
+  .evalImages {
+    height: 25vw;
+  }
+
+  /* 10th page - topics */
+  #topicSlide {
+    height: 195vh;
+    margin-bottom: 5vh;
+  }
+
+  #topicSlide {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #topicContentWrapper div {
+    width: 100%;
+    margin-bottom: 2vh;
+  }
+
+  .topicImg {
+    height: 50vh;
+  }
+
+  .topicTextWrapper {
+    height: 40vh;
+  }
+
+  .column {
+    height: auto;
+  }
+
+  .column_big {
+    align-self: center;
+    height: 30vh;
+  }
+
+  .column_heading {
+    height: 5vh;
+    padding-bottom: 10px;
+  }
+
+  .topicText {
+    padding: 5vw;
+  }
+
+  #lastColumn {
+    height: auto;
+  }
+
+  #lastColumn .topicTextWrapper {
+    height: 35vh;
+  }
+
+  #lastColumn .column_heading {
+    height: 5vh;
+  }
+
+  /* 11th page - about */
+  #aboutSlide {
+    height: 45vh;
+    margin-bottom: 2vh;
+  }
+
+  /* 12th page - organizers */
+  #peopleSlide {
+    height: 175vh;
+  }
+
+  #organizersWrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2vh;
+  }
+  /* 13th page - faq */
+  #faqSlide {
+    height: 120vh;
+  }
+  /* Footer */
+  #footerTextWrapper,
+  #footerSecondRow {
+    width: 90vw;
+  }
 }
 
 /* Small screens */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-    html,
-    body,
-    .slide {
-        font-size: 1.5vw;
-    }
+  html,
+  body,
+  .slide {
+    font-size: 1.5vw;
+  }
 
-    /* Anchors */
-    a.anchor {
-        top: -23vh;
-    }
+  /* Anchors */
+  a.anchor {
+    top: -23vh;
+  }
 
-    #program, #faqAnchor {
-        top: -23.5vh;
-    }
+  #program,
+  #faqAnchor {
+    top: -23.5vh;
+  }
 
-    #register {
-        top: -15vh;
-    }
+  #register {
+    top: -15vh;
+  }
 
-    #gallery {
-        top: 18vh;
-    }
+  #gallery {
+    top: 18vh;
+  }
 
-    #home {
-        top: -50vh;
-    }
-    /* End of anchors */
+  #home {
+    top: -50vh;
+  }
+  /* End of anchors */
 
-    /* Navbar */
-    #navbarHacText {
-        font-size: 2.5vw;
-    }
+  /* Navbar */
+  #navbarHacText {
+    font-size: 2.5vw;
+  }
 
-    #navbarLinks {
-        padding-top: 1vh;
-    }
+  #navbarLinks {
+    padding-top: 1vh;
+  }
 
-    .navbar-brand {
-        font-size: 1.4vw;
-    }
+  .navbar-brand {
+    font-size: 1.4vw;
+  }
 
-    /* General */
-    h1 {
-        font-size: 2.5vw;
-    }
+  /* General */
+  h1 {
+    font-size: 2.5vw;
+  }
 
-    .contentWrapper {
-        width: 80vw;
-        height: 84vh;
-    }
+  .contentWrapper {
+    width: 80vw;
+    height: 84vh;
+  }
 
-    .customBold.big {
-        font-size: 2.5vw;
-    }
+  .customBold.big {
+    font-size: 2.5vw;
+  }
 
-    .customBold.medium {
-        font-size: 2vw;
-    }
+  .customBold.medium {
+    font-size: 2vw;
+  }
 
-    .customBold.medium.time {
-        font-size: 2vw;
-    }
+  .customBold.medium.time {
+    font-size: 2vw;
+  }
 
-    .customBold.small {
-        font-size: 1.5vw;
-    }
+  .customBold.small {
+    font-size: 1.5vw;
+  }
 
-    /* 1st page - welcome */
-    #welcomeSlide {
-        height: 90vh;
-    }
+  /* 1st page - welcome */
+  #welcomeSlide {
+    height: 90vh;
+  }
 
-    #welcomeContentWrapper {
-        margin: 15vh auto 0;
-    }
+  #welcomeContentWrapper {
+    margin: 15vh auto 0;
+  }
 
-    #welcomeText {
-        width: 50%;
-    }
+  #welcomeText {
+    width: 50%;
+  }
 
-    .hackathonLogoWrapper {
-        width: 50%;
-    }
+  .hackathonLogoWrapper {
+    width: 50%;
+  }
 
-    .welcomeHead {
-        margin-bottom: 4vh;
-    }
+  .welcomeHead {
+    margin-bottom: 4vh;
+  }
 
-    #edLogo {
-        max-width: 100%;
-        max-height: 50%;
-    }
+  #edLogo {
+    max-width: 100%;
+    max-height: 50%;
+  }
 
-    /* 2nd page - why */
-    #whySlide {
-        height: 90vh;
-    }
+  /* 2nd page - why */
+  #whySlide {
+    height: 90vh;
+  }
 
-    .carousel-control-next {
-        padding-left: 10%;
-    }
+  .carousel-control-next {
+    padding-left: 10%;
+  }
 
-    .carousel-control-prev {
-        padding-right: 10%;
-    }
+  .carousel-control-prev {
+    padding-right: 10%;
+  }
 
-    .carousel-indicators {
-        display: none;
-    }
+  .carousel-indicators {
+    display: none;
+  }
 
-    #carouselWrapper {
-        width: 100%;
-    }
+  #carouselWrapper {
+    width: 100%;
+  }
 
-    /* 3rd page - register */
-    #registrationSlide {
-        height: 143vh;
-    }
+  /* 3rd page - register */
+  #registrationSlide {
+    height: 143vh;
+  }
 
-    #formContentWrapper, #formWrapper, #videoWrapper {
-        height: 80%;
-    }
+  #formContentWrapper,
+  #formWrapper,
+  #videoWrapper {
+    height: 80%;
+  }
 
-    .registerButton {
-        font-size: 1.5vw;
-        width: 14vw;
-        height: 4vw;
-    }
+  .registerButton {
+    font-size: 1.5vw;
+    width: 14vw;
+    height: 4vw;
+  }
 
-    #youtubeFrame {
-        width: 100%;
-        height: 70%;
-    }
+  #youtubeFrame {
+    width: 100%;
+    height: 70%;
+  }
 
-    .smallTextTerms {
-        font-size: 1.5vw;
-    }
+  .smallTextTerms {
+    font-size: 1.5vw;
+  }
 
-    /* 4th page - gallery */
-    #gallerySlide {
-        height: 135vh;
-    }
+  /* 4th page - gallery */
+  #gallerySlide {
+    height: 135vh;
+  }
 
-    #galleryText {
-        width: 70%;
-    }
+  #galleryText {
+    width: 70%;
+  }
 
-    .inline-gallery-container {
-        width: 80vw;
-        height: 100vh;
-    }
+  .inline-gallery-container {
+    width: 80vw;
+    height: 100vh;
+  }
 
-    /* 5th page - skills */
-    #skillSlide {
-        height: 75vh;
-    }
+  /* 5th page - skills */
+  #skillSlide {
+    height: 75vh;
+  }
 
-    .skillsImg {
-        height: 13vw;
-    }
+  .skillsImg {
+    height: 13vw;
+  }
 
-    /* 6th page - requirements */
-    #requirementsSlide {
-        height: 55vh;
-    }
+  /* 6th page - requirements */
+  #requirementsSlide {
+    height: 55vh;
+  }
 
-    #reqTable td:first-child {
-        text-align: left;
-        width: 4vw;
-    }
+  #reqTable td:first-child {
+    text-align: left;
+    width: 4vw;
+  }
 
-    #reqTable td:last-child {
-        width: 70vw;
-        padding-top: 27px;
-    }
+  #reqTable td:last-child {
+    width: 70vw;
+    padding-top: 27px;
+  }
 
-    #reqTableCol {
-        height: 4vw;
-        max-height: 4vw;
-    }
+  #reqTableCol {
+    height: 4vw;
+    max-height: 4vw;
+  }
 
-    .reqCheckmarkImg {
-        height: 4vw;
-    }
+  .reqCheckmarkImg {
+    height: 4vw;
+  }
 
-    /* 7,8th page - program 1,2 */
-    #programSlide {
-        height: 115vh;
-        margin-bottom: 2vh;
-    }
+  /* 7,8th page - program 1,2 */
+  #programSlide {
+    height: 115vh;
+    margin-bottom: 2vh;
+  }
 
-    #programSlide2 {
-        height: 95vh;
-    }
+  #programSlide2 {
+    height: 95vh;
+  }
 
-    .day {
-        padding-left:10px;
-    }
+  .day {
+    padding-left: 10px;
+  }
 
-    #programContentWrapper {
-        height: 90%;
-    }
+  #programContentWrapper {
+    height: 90%;
+  }
 
-    #programContent2Wrapper {
-        height: 95%;
-    }
+  #programContent2Wrapper {
+    height: 95%;
+  }
 
-    .programHead.day {
-        font-size: 2.2vw;
-    }
+  .programHead.day {
+    font-size: 2.2vw;
+  }
 
-    .programHead.date {
-        font-size: 1.8vw;
-    }
+  .programHead.date {
+    font-size: 1.8vw;
+  }
 
-    /* 9th page - evaluation */
-    #evaluationSlide {
-        height: 90vh;
-    }
+  /* 9th page - evaluation */
+  #evaluationSlide {
+    height: 90vh;
+  }
 
-    /* 10th page - topics */
-    #topicSlide {
-        height: 130vh;
-        margin-bottom: 5vh;
-    }
+  /* 10th page - topics */
+  #topicSlide {
+    height: 130vh;
+    margin-bottom: 5vh;
+  }
 
-    .topicWrapper {
-        height: 115vh;
-    }
+  .topicWrapper {
+    height: 115vh;
+  }
 
-    .topicImg {
-        height: 50vh;
-    }
+  .topicImg {
+    height: 50vh;
+  }
 
-    .topicTextWrapper {
-        height: 60vh;
-    }
+  .topicTextWrapper {
+    height: 60vh;
+  }
 
-    .column {
-        height: 25vh;
-    }
+  .column {
+    height: 25vh;
+  }
 
-    .column_big {
-        height: 55vh;
-    }
+  .column_big {
+    height: 55vh;
+  }
 
-    .column_heading {
-        height: 5vh;
-        padding-bottom: 10px;
-    }
+  .column_heading {
+    height: 5vh;
+    padding-bottom: 10px;
+  }
 
-    .topicText {
-        padding: 5vw;
-    }
+  .topicText {
+    padding: 5vw;
+  }
 
-    /* 11th page - about */
-    #aboutSlide {
-        height: 45vh;
-    }
+  /* 11th page - about */
+  #aboutSlide {
+    height: 45vh;
+  }
 
-    /* 12th page - organizers */
-    #peopleSlide {
-        height: 320vh;
-    }
+  /* 12th page - organizers */
+  #peopleSlide {
+    height: 320vh;
+  }
 
-    #organizersWrapper {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2vh;
-        margin-bottom: 3vh;
-    }
+  #organizersWrapper {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2vh;
+    margin-bottom: 3vh;
+  }
 
-    /* 13th page - faq */
-    #faqSlide {
-        height: 130vh;
-    }
+  /* 13th page - faq */
+  #faqSlide {
+    height: 130vh;
+  }
 
-    #footer {
-        height: 15vh;
-    }
+  #footer {
+    height: 15vh;
+  }
 }
 
 /* Desktops */
 @media only screen and (min-width: 1025px) and (max-width: 1280px) {
-    html,
-    body,
-    .slide {
-        font-size: 1vw;
-    }
+  html,
+  body,
+  .slide {
+    font-size: 1vw;
+  }
 }
 
 /* Large screens */
 @media only screen and (min-width: 1281px) and (max-width: 1920px) {
-    html,
-    body,
-    .slide {
-        font-size: 1vw;
-    }
+  html,
+  body,
+  .slide {
+    font-size: 1vw;
+  }
+  #footerSecondRow img {
+    width: 30px;
+  }
+  #topicSlide {
+    padding-top: 35px;
+  }
+  #requirementsSlide {
+    height: 54vh;
+  }
+  #evaluationText {
+    padding-top: 40px;
+  }
 }
 
 /* Ultra wide */
 @media only screen and (min-width: 1921px) {
-    html,
-    body,
-    .slide {
-        font-size: 1vw;
-    }
+  html,
+  body,
+  .slide {
+    font-size: 1vw;
+  }
+  #footerSecondRow img {
+    width: 50px;
+  }
+  #faqImg {
+    width: 150px;
+    height: 150px;
+  }
+  /* Podmienky */
+
+  .podmienka {
+    padding-bottom: 50px;
+  }
+  .textPodmienka {
+    padding-left: 25px;
+  }
 }
