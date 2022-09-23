@@ -99,6 +99,10 @@ h1 {
     padding-right: 10vw;
 }
 
+li {
+    color: #00497B;
+}
+
 .contentWrapper {
     width: 80vw;
     height: 84vh;
@@ -251,7 +255,7 @@ h1 {
     height: 100vh;
 }
 #programContentWrapper, #programContent2Wrapper {
-    background-color: #e7f5fd;
+    background-color: #DFF2FD;
 }
 
 #galleryText {
@@ -382,6 +386,7 @@ h1 {
 
 .programTable td:last-child {
     padding-left: 2vw;
+    color: #005b94;
 }
 
 .programTable td {
@@ -525,6 +530,8 @@ h1 {
 
 .organizerCard {
     width: 100%;
+    border-radius: 1vh;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 /* 13th page - faq */
@@ -538,4 +545,39 @@ h1 {
     display: flex;
     justify-content: center;
     margin-bottom: 2vh;
+}
+
+/* Footer */
+#footer {
+    height: 14vh;
+    background-color: #DFF2FD;
+    width: 100%;
+}
+
+#footerFirstRow, #footerSecondRow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footerTextWrapper, #footerSecondRowContent {
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footerSecondRow {
+    width: 80vw;
+    margin: 0 auto 0;
+    border-top: 1px solid #C3C3C3;
+    padding-top: 1vh;
+}
+
+.footerLink {
+    padding-right: 2vh;
+}
+
+#copyrightText {
+    color: #00497B;
 }
