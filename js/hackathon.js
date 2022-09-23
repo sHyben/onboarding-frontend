@@ -333,11 +333,6 @@ $('#closeAlert').click(function() {
 })
 
 
-$('.menu__item').click(function(event) {
-    $('.menu__box').css('display', 'none')
+$('.menu__item').click(function() {
     $('#menu__toggle').prop( "checked", false );
-})
-
-$('.menu__btn').click(function(event) {
-    $('.menu__box').css('display', 'block')
 })
