@@ -62,7 +62,7 @@ nav {
 }
 
 #navbarHacText {
-    font-size: 1.5vw;
+    font-size: 1.8vw;
     margin-right: 1.5vw;
 }
 
@@ -88,6 +88,11 @@ nav {
 .navbar-brand {
     font-size: 1vw;
     font-weight: bold;
+    color: #00497B !important;
+}
+
+#navbarLinks a:hover {
+    color: #ff7900 !important;
 }
 
 /* General */
@@ -213,7 +218,7 @@ li {
 .registerButton {
     background-color: #ff7900;
     color: white;
-    font-size: 0.8vw;
+    font-size: 1vw;
     width: 8vw;
     height: 2.5vw;
 }
@@ -381,12 +386,14 @@ li {
 .programTable td:first-child {
     border-right: 0.5vw solid #00497b;
     text-align: center;
+    vertical-align: top;
     width: 15vw;
 }
 
 .programTable td:last-child {
     padding-left: 2vw;
     color: #005b94;
+    vertical-align: top;
 }
 
 .programTable td {
@@ -483,7 +490,7 @@ li {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2vh;
-    margin-bottom: 2vh;
+    margin-bottom: 3vh;
 }
 
 .organizerCard {
@@ -534,6 +541,10 @@ li {
 
 .footerLink {
     padding-right: 2vh;
+}
+
+.footerLink:hover {
+    color: #ff7900 !important;
 }
 
 #copyrightText {
@@ -626,5 +637,5 @@ li {
     transition-duration: .25s;
 }
 .menu__item:hover {
-    background-color: #CFD8DC;
+    background-color: #DFF2FD;
 }
