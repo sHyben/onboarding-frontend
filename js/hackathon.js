@@ -3,19 +3,10 @@ const $lgContainer = document.getElementById("inline-gallery-container");
 const inlineGallery = lightGallery($lgContainer, {
     container: $lgContainer,
     dynamic: true,
-    // Turn off hash plugin in case if you are using it
-    // as we don't want to change the url on slide change
     hash: false,
-    // Do not allow users to close the gallery
     closable: false,
-    // Add maximize icon to enlarge the gallery
     showMaximizeIcon: true,
-    // Append caption inside the slide item
-    // to apply some animation for the captions (Optional)
     appendSubHtmlTo: ".lg-item",
-    // Delay slide transition to complete captions animations
-    // before navigating to different slides (Optional)
-    // You can find caption animation demo on the captions demo page
     slideDelay: 10,
     plugins: [lgZoom, lgThumbnail],
     dynamicEl: [
@@ -25,12 +16,7 @@ const inlineGallery = lightGallery($lgContainer, {
             responsive:
                 "public/images/hackathon/gallery/galleryImg1.jpg",
             thumb:
-                "public/images/hackathon/gallery/galleryImg1.jpg",
-            subHtml:
-                `<div class="lightGallery-captions">
-                    <h4>Photo by <a href="https://unsplash.com/@dann">Dan</a></h4>
-                    <p>Published on November 13, 2018</p>
-                </div>`
+                "public/images/hackathon/gallery/galleryImg1.jpg"
         },
         {
             src:
@@ -38,12 +24,7 @@ const inlineGallery = lightGallery($lgContainer, {
             responsive:
                 "public/images/hackathon/gallery/galleryImg2.jpg",
             thumb:
-                "public/images/hackathon/gallery/galleryImg2.jpg",
-            subHtml:
-                `<div class="lightGallery-captions">
-                    <h4>Photo by <a href="https://unsplash.com/@dann">Dan</a></h4>
-                    <p>Published on November 13, 2018</p>
-                </div>`
+                "public/images/hackathon/gallery/galleryImg2.jpg"
         },
         {
             src:
@@ -51,12 +32,7 @@ const inlineGallery = lightGallery($lgContainer, {
             responsive:
                 "public/images/hackathon/gallery/galleryImg3.jpg",
             thumb:
-                "public/images/hackathon/gallery/galleryImg3.jpg",
-            subHtml:
-                `<div class="lightGallery-captions">
-                    <h4>Photo by <a href="https://unsplash.com/@dann">Dan</a></h4>
-                    <p>Published on November 13, 2018</p>
-                </div>`
+                "public/images/hackathon/gallery/galleryImg3.jpg"
         },
         {
             src:
@@ -64,12 +40,7 @@ const inlineGallery = lightGallery($lgContainer, {
             responsive:
                 "public/images/hackathon/gallery/galleryImg4.jpg",
             thumb:
-                "public/images/hackathon/gallery/galleryImg4.jpg",
-            subHtml:
-                `<div class="lightGallery-captions">
-                    <h4>Photo by <a href="https://unsplash.com/@dann">Dan</a></h4>
-                    <p>Published on November 13, 2018</p>
-                </div>`
+                "public/images/hackathon/gallery/galleryImg4.jpg"
         },
         {
             src:
@@ -77,12 +48,7 @@ const inlineGallery = lightGallery($lgContainer, {
             responsive:
                 "public/images/hackathon/gallery/galleryImg5.jpg",
             thumb:
-                "public/images/hackathon/gallery/galleryImg5.jpg",
-            subHtml:
-                `<div class="lightGallery-captions">
-                    <h4>Photo by <a href="https://unsplash.com/@dann">Dan</a></h4>
-                    <p>Published on November 13, 2018</p>
-                </div>`
+                "public/images/hackathon/gallery/galleryImg5.jpg"
         },
         {
             src:
@@ -90,12 +56,7 @@ const inlineGallery = lightGallery($lgContainer, {
             responsive:
                 "public/images/hackathon/gallery/galleryImg6.jpg",
             thumb:
-                "public/images/hackathon/gallery/galleryImg6.jpg",
-            subHtml:
-                `<div class="lightGallery-captions">
-                    <h4>Photo by <a href="https://unsplash.com/@dann">Dan</a></h4>
-                    <p>Published on November 13, 2018</p>
-                </div>`
+                "public/images/hackathon/gallery/galleryImg6.jpg"
         },
         {
             src:
@@ -103,12 +64,7 @@ const inlineGallery = lightGallery($lgContainer, {
             responsive:
                 "public/images/hackathon/gallery/galleryImg7.jpg",
             thumb:
-                "public/images/hackathon/gallery/galleryImg7.jpg",
-            subHtml:
-                `<div class="lightGallery-captions">
-                    <h4>Photo by <a href="https://unsplash.com/@dann">Dan</a></h4>
-                    <p>Published on November 13, 2018</p>
-                </div>`
+                "public/images/hackathon/gallery/galleryImg7.jpg"
         },
         {
             src:
@@ -116,12 +72,7 @@ const inlineGallery = lightGallery($lgContainer, {
             responsive:
                 "public/images/hackathon/gallery/galleryImg8.png",
             thumb:
-                "public/images/hackathon/gallery/galleryImg8.png",
-            subHtml:
-                `<div class="lightGallery-captions">
-                    <h4>Photo by <a href="https://unsplash.com/@dann">Dan</a></h4>
-                    <p>Published on November 13, 2018</p>
-                </div>`
+                "public/images/hackathon/gallery/galleryImg8.png"
         },
         {
             src:
@@ -129,17 +80,10 @@ const inlineGallery = lightGallery($lgContainer, {
             responsive:
                 "public/images/hackathon/gallery/galleryImg9.jpg",
             thumb:
-                "public/images/hackathon/gallery/galleryImg9.jpg",
-            subHtml:
-                `<div class="lightGallery-captions">
-                    <h4>Photo by <a href="https://unsplash.com/@dann">Dan</a></h4>
-                    <p>Published on November 13, 2018</p>
-                </div>`
+                "public/images/hackathon/gallery/galleryImg9.jpg"
         }
     ],
 
-    // Completely optional
-    // Adding as the codepen preview is usually smaller
     thumbWidth: 60,
     thumbHeight: "40px",
     thumbMargin: 4
@@ -157,7 +101,7 @@ var homeWaypoint = new Waypoint({
         all.css('text-decoration', 'none');
         if(direction === "down") {
             let cur = $('#homeNav')
-            cur.css('color', '#00497B');
+            cur.css('color', '#ff7900');
             cur.css('text-decoration', 'underline');
         }
     },
@@ -324,12 +268,32 @@ document.querySelector('#teamCheck').addEventListener('change', () => {
     }
 })
 
-$("#registerForm").submit(function() {
-    $("#alertWrapper").css('display', 'flex')
+$("#registerForm").submit(function(e) {
+    e.preventDefault()
+
+    let name = $("#nameInput").val()
+    let email = $("#emailInput").val()
+    let phone = $("#phoneNumberInput").val()
+    let team = $("#teamNameInput").val()
+
+    console.log(name,email,phone,team)
+
+    $.post('https://newcomerjourney.com:8443/api/mail', {
+        name:name,
+        email:email,
+        phone:phone,
+        team:team
+    }).done(function() {
+        console.log('Success')
+        $("#alertWrapperSucc").css('display', 'flex')
+    }).fail(function() {
+        $("#alertWrapperFail").css('display', 'flex')
+        console.log('Failed')
+    });
 })
 
-$('#closeAlert').click(function() {
-    $("#alertWrapper").css('display', 'none')
+$('.closeAlert').click(function() {
+    $(".alertWrapper").css('display', 'none')
 })
 
 
