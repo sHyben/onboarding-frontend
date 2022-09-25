@@ -521,7 +521,7 @@
   }
 
   #home {
-    top: -80vh;
+    top: -101vh;
   }
   /* End of anchors */
 
@@ -624,13 +624,13 @@
 
   /* 1st page - welcome */
   #welcomeSlide {
-    height: 95vh;
+    height: 115vh;
   }
 
   #welcomeContentWrapper {
     display: flex;
     flex-flow: column;
-    margin: 18vh auto 0;
+    margin: 29vh auto 0;
   }
 
   #welcomeText {
@@ -649,7 +649,7 @@
   }
 
   .logoImg {
-    height: 60vh;
+    height: 80vh;
   }
 
   /* 2nd page - why */
@@ -1751,11 +1751,11 @@
   }
 
   #welcomeText {
-    width: 50%;
+    width: 40%;
   }
 
   .hackathonLogoWrapper {
-    width: 50%;
+    width: 60%;
   }
 
   .welcomeHead {
