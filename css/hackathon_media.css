@@ -442,7 +442,7 @@
 
   /* 12th page - organizers */
   #peopleSlide {
-    height: 235vh;
+    height: 270vh;
   }
 
   #organizersWrapper {
@@ -581,6 +581,7 @@
   .menu__btn {
     top: 70px;
     right: 60px;
+    width: 35px;
   }
 
   /* Alert */
@@ -1031,8 +1032,9 @@
   }
 
   .menu__btn {
-    top: 70px;
+    top: 80px;
     right: 60px;
+    width: 35px;
   }
 
   /* General */
