@@ -11,7 +11,7 @@
     top: -15vh;
   }
 
-  #program,
+  /* #program,
   #faqAnchor {
     top: -21vh;
   }
@@ -26,7 +26,7 @@
 
   #home {
     top: -80vh;
-  }
+  } */
 
   /* End of anchors */
 
@@ -104,7 +104,7 @@
 
   .contentWrapper {
     width: 90vw;
-    height: 84vh;
+   
   }
 
   .customBold.big {
@@ -125,13 +125,13 @@
 
   /* 1st page - welcome */
   #welcomeSlide {
-    height: 98vh;
+    
   }
 
   #welcomeContentWrapper {
     display: flex;
     flex-flow: column;
-    margin: 19vh auto 0;
+    margin: 10vh auto 0 auto;
   }
 
   #welcomeText {
@@ -155,7 +155,7 @@
 
   /* 2nd page - why */
   #whySlide {
-    height: 110vh;
+   
   }
 
   .carousel-indicators {
@@ -168,7 +168,7 @@
 
   /* 3rd page - register */
   #registrationSlide {
-    height: 130vh;
+   
     margin-bottom: 5vh;
   }
 
@@ -201,7 +201,7 @@
   #otherVideosWrapper {
     display: flex;
     flex-direction: column;
-    height: 50vh;
+    /* height: 50vh; */
     width: 100%;
   }
 
@@ -225,7 +225,7 @@
 
   /* 4th page - gallery */
   #gallerySlide {
-    height: 100vh;
+    /* height: 100vh; */
   }
 
   #galleryText,
@@ -241,7 +241,7 @@
 
   /* 5th page - skills */
   #skillSlide {
-    height: 175vh;
+    /* height: 175vh; */
   }
 
   #skillSlide h1 {
@@ -251,7 +251,7 @@
   #skillContentWrapper {
     display: flex;
     flex-direction: column;
-    height: 85%;
+    /* height: 85%; */
   }
 
   #skillContentWrapper div {
@@ -269,7 +269,7 @@
 
   /* 6th page - requirements */
   #requirementsSlide {
-    height: 60vh;
+    /* height: 60vh; */
   }
 
   #requirementsContentWrapper {
@@ -302,12 +302,12 @@
 
   /* 7,8th page - program 1,2 */
   #programSlide {
-    height: 135vh;
+    /* height: 135vh; */
     margin-bottom: 2vh;
   }
 
   #programSlide2 {
-    height: 115vh;
+    /* height: 115vh; */
   }
 
   #programContentWrapper,
@@ -347,11 +347,11 @@
 
   /* 9th page - evaluation */
   #evaluationSlide {
-    height: 155vh;
+    /* height: 155vh; */
   }
 
   #evaluationJury {
-    height: 55vh;
+    /* height: 55vh; */
     display: flex;
     flex-direction: column;
     margin-bottom: 4vh;
@@ -382,7 +382,7 @@
 
   /* 10th page - topics */
   #topicSlide {
-    height: 200vh;
+    /* height: 200vh; */
     margin-bottom: 5vh;
   }
 
@@ -396,12 +396,10 @@
     margin-bottom: 2vh;
   }
 
-  .topicImg {
-    height: 30vh;
-  }
+ 
 
   .topicTextWrapper {
-    height: 60vh;
+    /* height: 60vh; */
   }
 
   .column {
@@ -410,7 +408,7 @@
 
   .column_big {
     align-self: center;
-    height: 30vh;
+    /* height: 30vh; */
   }
 
   .column_heading {
@@ -427,7 +425,7 @@
   }
 
   #lastColumn .topicTextWrapper {
-    height: 60vh;
+    /* height: 60vh; */
   }
 
   #lastColumn .column_heading {
@@ -436,13 +434,13 @@
 
   /* 11th page - about */
   #aboutSlide {
-    height: 60vh;
+    /* height: 60vh; */
     margin-bottom: 2vh;
   }
 
   /* 12th page - organizers */
   #peopleSlide {
-    height: 270vh;
+    /* height: 270vh; */
   }
 
   #organizersWrapper {
@@ -452,12 +450,12 @@
   }
   /* 13th page - faq */
   #faqSlide {
-    height: 145vh;
+    /* height: 145vh; */
   }
 
   /* Footer */
   #footer {
-    height: 17vh;
+  
   }
 
   #footerFirstRow {
@@ -604,7 +602,7 @@
 
   .contentWrapper {
     width: 90vw;
-    height: 84vh;
+   
   }
 
   .customBold.big {
@@ -625,13 +623,14 @@
 
   /* 1st page - welcome */
   #welcomeSlide {
-    height: 115vh;
+    /* height: 115vh; */
   }
 
   #welcomeContentWrapper {
     display: flex;
     flex-flow: column;
-    margin: 29vh auto 0;
+    margin: 10vh auto 0;
+    justify-content: center;
   }
 
   #welcomeText {
@@ -646,6 +645,8 @@
   .hackathonLogoWrapper {
     width: 100%;
     order: 1;
+    display: flex;
+    justify-content: center;
     margin-bottom: 2vh;
   }
 
@@ -655,7 +656,7 @@
 
   /* 2nd page - why */
   #whySlide {
-    height: 100vh;
+   
   }
 
   .carousel-indicators {
@@ -668,12 +669,15 @@
 
   /* 3rd page - register */
   #registrationSlide {
-    height: 140vh;
+    /* height: 140vh; */
     margin-bottom: 5vh;
+    display: flex;
+    justify-content: center;
   }
 
   #formContentWrapper {
     flex-flow: column;
+    margin:50px 0;
   }
 
   .registerButton {
@@ -693,7 +697,7 @@
 
   #youtubeFrame {
     width: 100%;
-    height: 30vh;
+    /* height: 30vh; */
     order: 2;
     margin-bottom: 0;
   }
@@ -701,7 +705,8 @@
   #otherVideosWrapper {
     display: flex;
     flex-direction: column;
-    height: 60vh;
+    /* height: 60vh; */
+   
     width: 100%;
   }
 
@@ -724,7 +729,7 @@
 
   /* 4th page - gallery */
   #gallerySlide {
-    height: 95vh;
+    /* height: 95vh; */
   }
 
   #galleryText,
@@ -740,7 +745,7 @@
 
   /* 5th page - skills */
   #skillSlide {
-    height: 145vh;
+    /* height: 145vh; */
   }
 
   #skillSlide h1 {
@@ -764,7 +769,7 @@
 
   /* 6th page - requirements */
   #requirementsSlide {
-    height: 50vh;
+    /* height: 50vh; */
   }
 
   #requirementsContentWrapper {
@@ -797,12 +802,12 @@
 
   /* 7,8th page - program 1,2 */
   #programSlide {
-    height: 115vh;
+    /* height: 115vh; */
     margin-bottom: 2vh;
   }
 
   #programSlide2 {
-    height: 95vh;
+    /* height: 95vh; */
   }
 
   #programContentWrapper {
@@ -841,11 +846,11 @@
 
   /* 9th page - evaluation */
   #evaluationSlide {
-    height: 165vh;
+    /* height: 165vh; */
   }
 
   #evaluationJury {
-    height: 60vh;
+    /* height: 60vh; */
     display: flex;
     flex-direction: column;
     margin-bottom: 2vh;
@@ -854,6 +859,8 @@
   #evaluationText {
     display: flex;
     flex-direction: column;
+
+    
   }
 
   #evaluationText div {
@@ -866,7 +873,7 @@
 
   /* 10th page - topics */
   #topicSlide {
-    height: 195vh;
+    /* height: 195vh; */
     margin-bottom: 5vh;
   }
 
@@ -881,11 +888,11 @@
   }
 
   .topicImg {
-    height: 50vh;
+    /* height: 50vh; */
   }
 
   .topicTextWrapper {
-    height: 40vh;
+    /* height: 40vh; */
   }
 
   .column {
@@ -894,11 +901,11 @@
 
   .column_big {
     align-self: center;
-    height: 30vh;
+    /* height: 30vh; */
   }
 
   .column_heading {
-    height: 5vh;
+    /* height: 5vh; */
     padding-bottom: 10px;
   }
 
@@ -911,22 +918,22 @@
   }
 
   #lastColumn .topicTextWrapper {
-    height: 35vh;
+    /* height: 35vh; */
   }
 
   #lastColumn .column_heading {
-    height: 5vh;
+    /* height: 5vh; */
   }
 
   /* 11th page - about */
   #aboutSlide {
-    height: 45vh;
+    
     margin-bottom: 2vh;
   }
 
   /* 12th page - organizers */
   #peopleSlide {
-    height: 175vh;
+    
   }
 
   #organizersWrapper {
@@ -937,7 +944,7 @@
 
   /* 13th page - faq */
   #faqSlide {
-    height: 130vh;
+    
   }
 
   /* Footer */
@@ -1044,7 +1051,7 @@
 
   .contentWrapper {
     width: 90vw;
-    height: 84vh;
+   
   }
 
   .customBold.big {
@@ -1065,13 +1072,15 @@
 
   /* 1st page - welcome */
   #welcomeSlide {
-    height: 100vh;
+    /* height: 100vh; */
+   
   }
 
   #welcomeContentWrapper {
     display: flex;
     flex-flow: column;
-    margin: 20vh auto 0;
+    margin: 10vh auto 0;
+    justify-content: center;
   }
 
   #welcomeText {
@@ -1087,6 +1096,8 @@
     width: 100%;
     order: 1;
     margin-bottom: 2vh;
+    display: flex;
+    justify-content: center;
   }
 
   .logoImg {
@@ -1095,7 +1106,7 @@
 
   /* 2nd page - why */
   #whySlide {
-    height: 100vh;
+    /* height: 100vh; */
   }
 
   .carousel-indicators {
@@ -1108,7 +1119,7 @@
 
   /* 3rd page - register */
   #registrationSlide {
-    height: 140vh;
+    /* height: 140vh; */
     margin-bottom: 5vh;
   }
 
@@ -1141,7 +1152,7 @@
   #otherVideosWrapper {
     display: flex;
     flex-direction: column;
-    height: 60vh;
+    /* height: 60vh; */
     width: 100%;
   }
 
@@ -1164,7 +1175,7 @@
 
   /* 4th page - gallery */
   #gallerySlide {
-    height: 95vh;
+    /* height: 95vh; */
   }
 
   #galleryText,
@@ -1180,7 +1191,7 @@
 
   /* 5th page - skills */
   #skillSlide {
-    height: 145vh;
+    /* height: 145vh; */
   }
 
   #skillSlide h1 {
@@ -1281,7 +1292,7 @@
 
   /* 9th page - evaluation */
   #evaluationSlide {
-    height: 165vh;
+    /* height: 165vh; */
   }
 
   #evaluationJury {
@@ -1306,7 +1317,7 @@
 
   /* 10th page - topics */
   #topicSlide {
-    height: 195vh;
+    /* height: 195vh; */
     margin-bottom: 5vh;
   }
 
@@ -1320,12 +1331,10 @@
     margin-bottom: 2vh;
   }
 
-  .topicImg {
-    height: 50vh;
-  }
+
 
   .topicTextWrapper {
-    height: 40vh;
+    /* height: 40vh; */
   }
 
   .column {
@@ -1334,11 +1343,11 @@
 
   .column_big {
     align-self: center;
-    height: 30vh;
+    /* height: 30vh; */
   }
 
   .column_heading {
-    height: 5vh;
+    /* height: 5vh; */
     padding-bottom: 10px;
   }
 
@@ -1351,22 +1360,22 @@
   }
 
   #lastColumn .topicTextWrapper {
-    height: 35vh;
+    /* height: 35vh; */
   }
 
   #lastColumn .column_heading {
-    height: 5vh;
+    /* height: 5vh; */
   }
 
   /* 11th page - about */
   #aboutSlide {
-    height: 45vh;
+   
     margin-bottom: 2vh;
   }
 
   /* 12th page - organizers */
   #peopleSlide {
-    height: 175vh;
+    
   }
 
   #organizersWrapper {
@@ -1377,7 +1386,7 @@
 
   /* 13th page - faq */
   #faqSlide {
-    height: 130vh;
+    
   }
 
   /* Footer */
@@ -1438,7 +1447,7 @@
 
   .contentWrapper {
     width: 80vw;
-    height: 84vh;
+   
   }
 
   .customBold.big {
@@ -1459,7 +1468,7 @@
 
   /* 1st page - welcome */
   #welcomeSlide {
-    height: 90vh;
+    /* height: 90vh; */
   }
 
   #welcomeContentWrapper {
@@ -1485,7 +1494,7 @@
 
   /* 2nd page - why */
   #whySlide {
-    height: 90vh;
+    /* height: 90vh; */
   }
 
   .carousel-control-next {
@@ -1512,7 +1521,7 @@
   #formContentWrapper,
   #formWrapper,
   #videoWrapper {
-    height: 80%;
+    /* height: 80%; */
   }
 
   .registerButton {
@@ -1532,7 +1541,7 @@
 
   /* 4th page - gallery */
   #gallerySlide {
-    height: 135vh;
+    /* height: 135vh; */
   }
 
   #galleryText {
@@ -1546,7 +1555,7 @@
 
   /* 5th page - skills */
   #skillSlide {
-    height: 75vh;
+    /* height: 75vh; */
   }
 
   .skillsImg {
@@ -1579,12 +1588,12 @@
 
   /* 7,8th page - program 1,2 */
   #programSlide {
-    height: 115vh;
+    /* height: 115vh; */
     margin-bottom: 2vh;
   }
 
   #programSlide2 {
-    height: 95vh;
+    /* height: 95vh; */
   }
 
   .day {
@@ -1609,37 +1618,37 @@
 
   /* 9th page - evaluation */
   #evaluationSlide {
-    height: 90vh;
+    /* height: 90vh; */
   }
 
   /* 10th page - topics */
   #topicSlide {
-    height: 130vh;
+    /* height: 130vh; */
     margin-bottom: 5vh;
   }
 
   .topicWrapper {
-    height: 115vh;
+    /* height: 115vh; */
   }
 
   .topicImg {
-    height: 50vh;
+    /* height: 50vh; */
   }
 
   .topicTextWrapper {
-    height: 60vh;
+    /* height: 60vh; */
   }
 
   .column {
-    height: 25vh;
+    /* height: 25vh; */
   }
 
   .column_big {
-    height: 55vh;
+    /* height: 55vh; */
   }
 
   .column_heading {
-    height: 5vh;
+    /* height: 5vh; */
     padding-bottom: 10px;
   }
 
@@ -1649,12 +1658,12 @@
 
   /* 11th page - about */
   #aboutSlide {
-    height: 45vh;
+   
   }
 
   /* 12th page - organizers */
   #peopleSlide {
-    height: 320vh;
+    
   }
 
   #organizersWrapper {
@@ -1665,11 +1674,13 @@
 
   /* 13th page - faq */
   #faqSlide {
-    height: 130vh;
+  
   }
 
   #footer {
-    height: 15vh;
+    
+
+
   }
 }
 
@@ -1724,7 +1735,7 @@
 
   .contentWrapper {
     width: 80vw;
-    height: 84vh;
+    
   }
 
   .customBold.big {
@@ -1745,7 +1756,7 @@
 
   /* 1st page - welcome */
   #welcomeSlide {
-    height: 90vh;
+    /* height: 90vh; */
   }
 
   #welcomeContentWrapper {
@@ -1757,7 +1768,8 @@
   }
 
   .hackathonLogoWrapper {
-    width: 60%;
+    max-width: 400px;
+ 
   }
 
   .welcomeHead {
@@ -1771,7 +1783,7 @@
 
   /* 2nd page - why */
   #whySlide {
-    height: 95vh;
+    /* height: 95vh; */
   }
 
   .carousel-control-next {
@@ -1791,14 +1803,12 @@
   }
 
   /* 3rd page - register */
-  #registrationSlide {
-    height: 160vh;
-  }
+
 
   #formContentWrapper,
   #formWrapper,
   #videoWrapper {
-    height: 80%;
+    /* height: 80%; */
   }
 
   .registerButton {
@@ -1818,7 +1828,7 @@
 
   /* 4th page - gallery */
   #gallerySlide {
-    height: 140vh;
+    /* height: 140vh; */
   }
 
   #galleryText {
@@ -1832,7 +1842,7 @@
 
   /* 5th page - skills */
   #skillSlide {
-    height: 85vh;
+    /* height: 85vh; */
   }
 
   .skillsImg {
@@ -1841,7 +1851,7 @@
 
   /* 6th page - requirements */
   #requirementsSlide {
-    height: 70vh;
+    /* height: 70vh; */
   }
 
   #reqTable td:first-child {
@@ -1865,12 +1875,13 @@
 
   /* 7,8th page - program 1,2 */
   #programSlide {
-    height: 115vh;
+    /* height: 115vh; */
     margin-bottom: 2vh;
+    padding-top: 100px;
   }
 
   #programSlide2 {
-    height: 95vh;
+    /* height: 95vh; */
   }
 
   .day {
@@ -1878,7 +1889,7 @@
   }
 
   #programContentWrapper {
-    height: 90%;
+    height: 100%;
   }
 
   #programContent2Wrapper {
@@ -1895,33 +1906,30 @@
 
   /* 9th page - evaluation */
   #evaluationSlide {
-    height: 100vh;
+    /* height: 100vh; */
   }
 
   /* 10th page - topics */
   #topicSlide {
-    height: 130vh;
+    /* height: 130vh; */
     margin-bottom: 5vh;
   }
 
   .topicWrapper {
-    height: 115vh;
+    /* height: 115vh; */
   }
 
-  .topicImg {
-    height: 50vh;
-  }
 
   .topicTextWrapper {
-    height: 60vh;
+    /* height: 60vh; */
   }
 
   .column {
-    height: 25vh;
+    /* height: 25vh; */
   }
 
   .column_big {
-    height: 55vh;
+    /* height: 55vh; */
   }
 
   .column_heading {
@@ -1935,12 +1943,12 @@
 
   /* 11th page - about */
   #aboutSlide {
-    height: 50vh;
+   
   }
 
   /* 12th page - organizers */
   #peopleSlide {
-    height: 355vh;
+   
   }
 
   #organizersWrapper {
@@ -1951,11 +1959,12 @@
 
   /* 13th page - faq */
   #faqSlide {
-    height: 140vh;
+    margin-top: 100px !important;;
+    
   }
 
   #footer {
-    height: 15vh;
+   
   }
 }
 
@@ -1988,6 +1997,7 @@
   #gallery {
     top: -15vh;
   }
+  
 
   #home {
     top: -50vh;
@@ -2043,9 +2053,11 @@
 
   /* 1st page - welcome */
   #welcomeSlide {
-    height: 90vh;
+    /* height: 90vh; */
   }
-
+  .logoImg {
+    max-width: 100%;
+  }
   #welcomeContentWrapper {
     margin: 15vh auto 0;
   }
@@ -2056,12 +2068,12 @@
 
   /* 2nd page - why */
   #whySlide {
-    height: 115vh;
+    /* height: 115vh; */
   }
 
   /* 3rd page - register */
   #registrationSlide {
-    height: 200vh;
+    /* height: 200vh; */
   }
 
   .registerButton {
@@ -2080,7 +2092,7 @@
 
   /* 4th page - gallery */
   #gallerySlide {
-    height: 120vh;
+    /* height: 120vh; */
   }
 
   #galleryText {
@@ -2094,12 +2106,14 @@
 
   /* 5th page - skills */
   #skillSlide {
-    height: 100vh;
+    /* height: 100vh; */
+    padding-top:100px;
   }
 
   /* 6th page - requirements */
   #requirementsSlide {
-    height: 75vh;
+    margin-top:50px;
+    /* height: 75vh; */
   }
 
   #requirementsContentWrapper {
@@ -2145,12 +2159,12 @@
 
   /* 7,8th page - program 1,2 */
   #programSlide {
-    height: 135vh;
-    margin-bottom: 2vh;
+    /* height: 135vh; */
+    margin-bottom: 100px;
   }
 
   #programSlide2 {
-    height: 120vh;
+    /* height: 120vh; */
   }
 
   #programContentWrapper {
@@ -2176,7 +2190,7 @@
 
   /* 9th page - evaluation */
   #evaluationSlide {
-    height: 130vh;
+    /* height: 130vh; */
   }
 
   #evaluationJury {
@@ -2185,7 +2199,7 @@
 
   /* 10th page - topics */
   #topicSlide {
-    height: 160vh;
+    /* height: 160vh; */
   }
 
   .topicTextWrapper p {
@@ -2193,21 +2207,21 @@
   }
 
   .topicImg {
-    height: 70vh;
+    /* height: 70vh; */
   }
 
   .topicTextWrapper {
-    height: 70vh;
+    /* height: 70vh; */
   }
 
   /* 11th page - about */
   #aboutSlide {
-    height: 50vh;
+    
   }
 
   /* 12th page - organizers */
   #peopleSlide {
-    height: 200vh;
+   
   }
 
   #organizersWrapper {
@@ -2216,10 +2230,8 @@
 
   /* 13th page - faq */
   #faqSlide {
-    height: 170vh;
+    
   }
 
-  #faqImgWrapper {
-    height: 20vh;
-  }
+ 
 }

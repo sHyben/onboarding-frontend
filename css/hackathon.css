@@ -3,7 +3,7 @@ body,
 .slide {
     margin: 0;
     width: 100%;
-    height: 100%;
+   
     font-family: 'Open Sans';
     font-size: 1vw;
     scroll-behavior: smooth;
@@ -36,7 +36,7 @@ a.anchor {
 
 /* Navbar */
 nav {
-    height: 14vh;
+    /* height: 14vh; */
     background-color: #DFF2FD;
     font-size: 2vh;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
@@ -136,7 +136,7 @@ li {
 
 .contentWrapper {
     width: 80vw;
-    height: 84vh;
+   
     z-index: 10;
     background-color: white;
     border-radius: 1vh;
@@ -172,11 +172,15 @@ li {
 
 /* 1st page - welcome */
 #welcomeSlide {
-    height: 90vh;
+    /* height: 90vh; */
+    margin:100px 0;
 }
 
 #welcomeContentWrapper {
-    margin: 15vh auto 0;
+    /* margin: 15vh auto 0; */
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
 }
 
 #welcomeHeader {
@@ -184,6 +188,7 @@ li {
     padding-left: 0;
     padding-right: 0;
 }
+
 
 .welcomeHead {
     margin-bottom: 4vh;
@@ -195,8 +200,8 @@ li {
 }
 
 .logoImg {
-    width: 100%;
-    max-width: 100%;
+    
+    max-width: 600px;
     height: 84vh;
     border-radius: 1vh;
 }
@@ -204,11 +209,19 @@ li {
 #teamCheckWrapper {
     margin-top: 1vw;
 }
+#youtubeFrame2,
+#youtubeFrame3 {
+  margin-top: 5vh;
+  height: 40vh;
+  width: 100%;
+}
 
 /* 2nd page - why */
 #whySlide {
-    height: 85vh;
+    /* height: 85vh; */
+    margin-bottom:50px;
 }
+
 
 .carousel-control-next {
     padding-left: 10%;
@@ -225,15 +238,16 @@ li {
 
 /* 3rd page - register */
 #registrationSlide {
-    height: 120vh;
+    /* height: 120vh; */
+   padding:50px 0;
 }
 
 .customBold.small.register {
     color: #ff7900;
 }
 
-#formContentWrapper, #formWrapper, #videoWrapper{
-    height: 78%;
+ #formWrapper, #videoWrapper{
+    height: 100%;
 }
 
 #nameInput, #emailInput, #phoneNumberInput, #teamNameInput,
@@ -259,17 +273,19 @@ li {
 
 #youtubeFrame {
     width: 100%;
-    height: 70%;
+    height: 100%;
     margin-bottom: 2vh;
 }
 
 #otherVideosWrapper {
-    height: 35vh;
+    /* height: 35vh; */
+   
+  
 }
 
 #youtubeFrame2, #youtubeFrame3 {
     margin-top: 5vh;
-    height: 98%;
+   
     width: 50%;
 }
 
@@ -283,7 +299,7 @@ li {
 
 /* 4th page - gallery */
 #gallerySlide {
-    height: 100vh;
+   margin-top:50px;
 }
 
 #gallerySlideWrapper {
@@ -306,7 +322,8 @@ li {
 
 /* 5th page - skills */
 #skillSlide {
-    height: 75vh;
+    /* height: 75vh; */
+    margin-top:50px;
 }
 
 #skillSlide h1 {
@@ -322,6 +339,13 @@ li {
 
 #skillContentWrapper {
     height: 100%;
+    display: flex;
+    flex-direction: row;
+    width:80vw;
+    margin-bottom:50px;
+}
+.skill{
+    width:25%;
 }
 
 .skillImgWrapper {
@@ -337,7 +361,7 @@ li {
 
 /* 6th page - requirements */
 #requirementsSlide {
-    height: 55vh;
+    /* height: 55vh; */
 }
 
 #requirementsContentWrapper {
@@ -345,7 +369,7 @@ li {
 }
 
 #reqTable td {
-    padding: 1vw 0vw 0vw 0vw;
+    /* padding: 1vw 0vw 0vw 0vw; */
 }
 
 #reqTable td:first-child {
@@ -377,22 +401,24 @@ li {
 
 .reqText {
     width: 75%;
-    height: 6vw;
+    /* height: 6vw; */
     vertical-align: middle;
 }
 
 /* 7,8th page - program 1,2 */
 #programSlide {
-    height: 100vh;
+    /* height: 100vh; */
     margin-bottom: 2vh;
+    margin-top:70px;
 }
 
 #programSlide2 {
-    height: 90vh;
+    /* height: 90vh; */
+    margin-top:40px;
 }
 
 #programContentWrapper {
-    height: 90%;
+    height: 100%;
 }
 
 .customBold.big.blue {
@@ -442,11 +468,15 @@ li {
 
 /* 9th page - evaluation */
 #evaluationSlide {
-    height: 90vh;
+    /* height: 90vh; */
+    padding-top:50px;
+    padding-bottom: 50px;
+    
 }
 
 #evaluationJury {
-    height: 35vh;
+    /* height: 35vh; */
+    margin-bottom: 50px;
 }
 
 .juryCol {
@@ -472,16 +502,17 @@ li {
 }
 
 .points{
-    margin: 0;
+   
+    /* margin: 0;
     padding: 0;
     position: relative;
-    top: -40px;
+    top: -40px; */
 }
 
 /* 10th page - topics */
 #topicSlide {
-    height: 125vh;
-    margin-bottom: 5vh;
+    /* height: 125vh; */
+    margin-bottom: 50px;
 }
 
 .topicWrapper {
@@ -496,29 +527,29 @@ li {
 }
 
 .topicImg {
-    height: 55vh;
+    /* height: 55vh; */
     width: 100%;
     border-radius: 1vh 1vh 0 0;
 }
 
 .topicTextWrapper {
-    height: 45vh;
+    /* height: 45vh; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .column{
-    height: 25vh;
+    /* height: 25vh; */
 }
 
 .column_big{
     align-self: center;
-    height: 30vh;
+    /* height: 30vh; */
 }
 
 .column_heading{
-    height: 10vh;
+    /* height: 10vh; */
     padding-bottom: 10px;
 }
 
@@ -528,7 +559,8 @@ li {
 
 /* 11th page - about */
 #aboutSlide {
-    height: 35vh;
+    /* height: 35vh; */
+    padding-top:50px;
 }
 
 #aboutSlide div h1 {
@@ -542,7 +574,7 @@ li {
 
 /* 12th page - organizers */
 #peopleSlide {
-    height: 245vh;
+    /* height: 245vh; */
 }
 
 #organizersWrapper {
@@ -564,17 +596,24 @@ li {
 }
 
 #faqSlide {
-    height: 115vh;
+    /* height: 115vh; */
+    margin-top:104px;
+    margin-bottom: 100px;
 }
 
 #faqImgWrapper {
-    width: 100%;
-    height: 15vh;
+  
+    height: 7vh;
+    max-width: 300px;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     margin-bottom: 2vh;
 }
-
+#faqImg{
+    height: 7vh;
+    max-width: 300px;
+}
 /* Footer */
 #footer {
     /* height: 18vh; */
