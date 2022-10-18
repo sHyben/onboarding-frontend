@@ -117,8 +117,8 @@
             </svg>
             <div>
                 Registrácia prebehla úspešne! Poslali sme Ti mail na zadanú adresu. <br> Ak Ti neprišiel, skontroluj
-                si SPAM. Ak je
-                tam iný technický problém, kontaktuj nás na hackathon@erstegroup.com. Tešíme sa na Teba!
+                si SPAM. Ak je tam iný technický problém, kontaktuj nás na hackathon@erstegroup.com. Tešíme sa na Teba!
+                <b>POZOR: Pre veľký záujem musí vašu registráciu organizátor potvrdiť dodatočným emailom!</b>
             </div>
         </div>
         <button id="closeAlert" type="button" class="closeAlert btn-close" aria-label="Close"></button>
@@ -237,14 +237,25 @@
 
 <div id="registrationSlide" class="slide">
     <div id="formContentWrapper" class="contentWrapper row justify-content-center">
+        <a class="anchor" id="register"></a>
+        <div class="d-inline-block mb-2">
+            <img class="reqCheckmarkImg" src="public/images/hackathon/regAlert.png" alt="Alert!">
+            <span class="ps-2">
+                <code class="customBold small register">Pre veľký záujem budú musieť byť ďalšie registrácie potvrdené
+                    dodatočným emailom od organizátora!
+                </code> <br>
+                Stále je možné sa zaregistrovať, avšak naše kapacity sú obmedzené, a preto budeme ďalšie registrácie
+                vyhodnocovať individuálne podľa toho, či sa nám podarí zaistiť podmienky pre väčšie množstvo účastníkov,
+                alebo niekto zruší registráciu. Ďakujeme vám za váš záujem a pochopenie.
+            </span>
+        </div>
         <div id="formWrapper" class="col bg-white d-flex justify-content-center">
-            <a class="anchor" id="register"></a>
             <form id="registerForm">
                 <div class="d-inline-block mb-2">
                     <img class="reqCheckmarkImg" src="public/images/hackathon/regAlert.png" alt="Alert!">
                     <span class="ps-2 ">
                             <code class="customBold small register">Každý člen tímu</code> musí byť registrovaný
-                        </span>
+                    </span>
                 </div>
                 <div class="form-floating mb-3 input-sm">
                     <input type="text" class="form-control" id="nameInput" placeholder="Username" required>
