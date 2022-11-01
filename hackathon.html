@@ -241,12 +241,12 @@
         <div class="d-inline-block mb-2">
             <img class="reqCheckmarkImg" src="public/images/hackathon/regAlert.png" alt="Alert!">
             <span class="ps-2">
-                <code class="customBold small register">Pre veľký záujem budú musieť byť ďalšie registrácie potvrdené
-                    dodatočným emailom od organizátora!
+                <code class="customBold small register">Registrácia bola ukončená!
                 </code> <br>
-                Stále je možné sa zaregistrovať, avšak naše kapacity sú obmedzené, a preto budeme ďalšie registrácie
-                vyhodnocovať individuálne podľa toho, či sa nám podarí zaistiť podmienky pre väčšie množstvo účastníkov,
-                alebo niekto zruší registráciu. Ďakujeme vám za váš záujem a pochopenie.
+                Na všetkých súťažiacich sa tešíme. V prípade nejasností píšte na
+                <a href="mailto:hackathon@erstegroup.com">hackathon@erstegroup.com</a>,
+                <a href="mailto:Jan.Sehnal@erstegroup.com">Jan.Sehnal@erstegroup.com</a> alebo
+                <a href="mailto:MatusJozef.Bizon@erstegroup.com">MatusJozef.Bizon@erstegroup.com</a>
             </span>
         </div>
         <div id="formWrapper" class="col bg-white d-flex justify-content-center">
@@ -258,17 +258,17 @@
                     </span>
                 </div>
                 <div class="form-floating mb-3 input-sm">
-                    <input type="text" class="form-control" id="nameInput" placeholder="Username" required>
+                    <input type="text" class="form-control" id="nameInput" placeholder="Username" required disabled>
                     <label for="nameInput">Meno a priezvisko</label>
                 </div>
                 <div class="form-floating mb-3">
                     <input type="email" class="form-control" id="emailInput" placeholder="name@example.com"
-                           required>
+                           required disabled>
                     <label for="emailInput">E-mail</label>
                 </div>
 
                 <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="phoneNumberInput" placeholder="+421 000 000 000">
+                    <input type="text" class="form-control" id="phoneNumberInput" placeholder="+421 000 000 000" disabled>
                     <label for="phoneNumberInput">Telefónne číslo (dobrovoľné)</label>
                 </div>
                 <p>
@@ -276,20 +276,20 @@
                     neplánujeme.
                 </p>
                 <div id="teamCheckWrapper" class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="teamCheck">
+                    <input type="checkbox" class="form-check-input" id="teamCheck" disabled>
                     <label class="form-check-label" for="teamCheck">Mám tím</label>
                 </div>
                 <div class="form-floating mb-3" id="teamNameInputWrapper">
-                    <input type="text" class="form-control" id="teamNameInput" placeholder="Example team name">
+                    <input type="text" class="form-control" id="teamNameInput" placeholder="Example team name" disabled>
                     <label for="teamNameInput">Názov tímu</label>
                 </div>
                 <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="gdprCheck" required>
+                    <input type="checkbox" class="form-check-input" id="gdprCheck" required disabled>
                     <label class="form-check-label" for="gdprCheck">Súhlasím so spracovaním osobných údajov*</label>
                 </div>
 
                 <button id="formSubmitButton" type="submit"
-                        class="registerButton btn btn-warning">Zaregistrovať</button>
+                        class="registerButton btn btn-warning" disabled>Zaregistrovať</button>
             </form>
         </div>
         <div class="videoWrapper col-8  d-flex flex-column">
