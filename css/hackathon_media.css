@@ -129,7 +129,6 @@
   }
 
   #welcomeText {
-    order: 2;
     width: 100%;
   }
 
@@ -139,7 +138,6 @@
 
   .hackathonLogoWrapper {
     width: 100%;
-    order: 1;
     margin-bottom: 15px;
   }
 
@@ -534,13 +532,11 @@
 
   /* 1st page - welcome */
   #welcomeContentWrapper {
-    display: flex;
-    flex-flow: column;
+
     margin: 120px auto 0;
   }
 
   #welcomeText {
-    order: 2;
     width: 100%;
   }
 
@@ -1248,7 +1244,7 @@
   }
 
   #welcomeText {
-    width: 50%;
+
   }
 
   .hackathonLogoWrapper {
@@ -1501,7 +1497,6 @@
   }
 
   #welcomeText {
-    width: 45%;
   }
 
   .hackathonLogoWrapper {

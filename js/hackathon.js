@@ -91,7 +91,100 @@ const inlineGallery = lightGallery($lgContainer, {
 
 setTimeout(() => {
     inlineGallery.openGallery();
+    inlineGallery2.openGallery();
 }, 200);
+
+
+const $lgContainer2 = document.getElementById("inline-gallery-container2");
+
+const inlineGallery2 = lightGallery($lgContainer2, {
+    container: $lgContainer2,
+    dynamic: true,
+    hash: false,
+    closable: false,
+    showMaximizeIcon: true,
+    appendSubHtmlTo: ".lg-item",
+    slideDelay: 10,
+    plugins: [lgZoom, lgThumbnail],
+    dynamicEl: [
+        {
+            src:
+                "public/images/hackathon/gallery/galleryImg1.jpg",
+            responsive:
+                "public/images/hackathon/gallery/galleryImg1.jpg",
+            thumb:
+                "public/images/hackathon/gallery/galleryImg1.jpg"
+        },
+        {
+            src:
+                "public/images/hackathon/gallery/galleryImg2.jpg",
+            responsive:
+                "public/images/hackathon/gallery/galleryImg2.jpg",
+            thumb:
+                "public/images/hackathon/gallery/galleryImg2.jpg"
+        },
+        {
+            src:
+                "public/images/hackathon/gallery/galleryImg3.jpg",
+            responsive:
+                "public/images/hackathon/gallery/galleryImg3.jpg",
+            thumb:
+                "public/images/hackathon/gallery/galleryImg3.jpg"
+        },
+        {
+            src:
+                "public/images/hackathon/gallery/galleryImg4.jpg",
+            responsive:
+                "public/images/hackathon/gallery/galleryImg4.jpg",
+            thumb:
+                "public/images/hackathon/gallery/galleryImg4.jpg"
+        },
+        {
+            src:
+                "public/images/hackathon/gallery/galleryImg5.jpg",
+            responsive:
+                "public/images/hackathon/gallery/galleryImg5.jpg",
+            thumb:
+                "public/images/hackathon/gallery/galleryImg5.jpg"
+        },
+        {
+            src:
+                "public/images/hackathon/gallery/galleryImg6.jpg",
+            responsive:
+                "public/images/hackathon/gallery/galleryImg6.jpg",
+            thumb:
+                "public/images/hackathon/gallery/galleryImg6.jpg"
+        },
+        {
+            src:
+                "public/images/hackathon/gallery/galleryImg7.jpg",
+            responsive:
+                "public/images/hackathon/gallery/galleryImg7.jpg",
+            thumb:
+                "public/images/hackathon/gallery/galleryImg7.jpg"
+        },
+        {
+            src:
+                "public/images/hackathon/gallery/galleryImg8.png",
+            responsive:
+                "public/images/hackathon/gallery/galleryImg8.png",
+            thumb:
+                "public/images/hackathon/gallery/galleryImg8.png"
+        },
+        {
+            src:
+                "public/images/hackathon/gallery/galleryImg9.jpg",
+            responsive:
+                "public/images/hackathon/gallery/galleryImg9.jpg",
+            thumb:
+                "public/images/hackathon/gallery/galleryImg9.jpg"
+        }
+    ],
+
+    thumbWidth: 60,
+    thumbHeight: "40px",
+    thumbMargin: 4
+});
 
 var homeWaypoint = new Waypoint({
     element: document.getElementById('home'),

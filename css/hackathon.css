@@ -183,6 +183,7 @@ li {
     text-align: left;
     padding-left: 0;
     padding-right: 0;
+    margin-top: 44px;
 }
 
 .welcomeHead {
@@ -263,6 +264,11 @@ li {
     margin-right: 2vh;
 }
 
+#youtubeFrame4 {
+    margin-top: 44px;
+    width: 800px;
+    height: 400px;
+}
 .smallTextTerms {
     font-size: 16px;
 }
@@ -276,7 +282,7 @@ li {
     width: 50%;
 }
 
-.inline-gallery-container {
+.inline-gallery-container, .inline-gallery-container2 {
     width: 60vw;
     height: 756px;
     position: relative;
