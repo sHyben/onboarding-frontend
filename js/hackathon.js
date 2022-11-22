@@ -93,7 +93,7 @@ const $lgContainer2 = document.getElementById("inline-gallery-container2");
 let inlineGallery2
 const galleryData = []
 window.onload = () => {
-    for(let i = 1; i < 60; i++) {
+    for(let i = 0; i < 60; i++) {
         galleryData.push({
             src:
                 "public/images/hackathon/hackathon2022/"+i+".jpg",
